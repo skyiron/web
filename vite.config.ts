@@ -107,21 +107,19 @@ export default defineConfig(({ mode, command }) => {
   const production = mode === 'production'
 
   /**
-     When setting `OWNCLOUD_WEB_CONFIG_URL` make sure to configure the oauth/oidc client
+     When setting `OPENCLOUD_WEB_CONFIG_URL` make sure to configure the oauth/oidc client
 
-
-     # oCIS
-     For oCIS instances you can use `./dev/docker/ocis.idp.config.yaml`.
+     For OpenCloud instances you can use `./dev/docker/ocis.idp.config.yaml`.
      In docker setups you need to mount it to `/etc/ocis/idp.yaml`.
      E.g. with docker-compose you could add a volume to the ocis container like this:
      - /home/youruser/projects/oc-web/dev/docker/ocis.idp.config.yaml:/etc/ocis/idp.yaml
 
-     To use the oCIS deployment examples start vite like this:
-     OWNCLOUD_WEB_CONFIG_URL="https://ocis.owncloud.test/config.json" pnpm vite
+     Example:
+     OPENCLOUD_WEB_CONFIG_URL="https://your-open-cloud.test/config.json" pnpm vite
 
      */
   const configUrl =
-    process.env.OWNCLOUD_WEB_CONFIG_URL || 'https://host.docker.internal:9200/config.json'
+    process.env.OPENCLOUD_WEB_CONFIG_URL || 'https://host.docker.internal:9200/config.json'
 
   const config: UserConfig = {
     ...(!production && {
@@ -291,7 +289,7 @@ export default defineConfig(({ mode, command }) => {
                 data: {
                   buildConfig,
 
-                  title: process.env.TITLE || 'ownCloud',
+                  title: process.env.TITLE || 'OpenCloud',
                   compilationTimestamp: new Date().getTime(),
                   supportedBrowsersRegex: supportedBrowsersRegex
                 }

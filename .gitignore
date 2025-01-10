@@ -46,7 +46,7 @@ playwright-report
 
 # Themes
 /packages/web-runtime/themes/*
-!/packages/web-runtime/themes/owncloud/
+!/packages/web-runtime/themes/opencloud/
 
 # Compiled tokens
 /packages/design-system/src/assets/tokens/
