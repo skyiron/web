@@ -89,8 +89,8 @@
 import { computed, defineComponent } from 'vue'
 import UserInfoBox from './UserInfoBox.vue'
 import { PropType } from 'vue'
-import { AppRole, User } from '@ownclouders/web-client/graph/generated'
-import { formatFileSize } from '@ownclouders/web-pkg'
+import { AppRole, User } from '@opencloud-eu/web-client/graph/generated'
+import { formatFileSize } from '@opencloud-eu/web-pkg'
 import { useGettext } from 'vue3-gettext'
 
 export default defineComponent({

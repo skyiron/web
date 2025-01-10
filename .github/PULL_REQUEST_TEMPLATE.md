@@ -1,9 +1,9 @@
 <!--
-Thanks for submitting a change to ownCloud!
+Thanks for submitting a change to OpenCloud!
 
-This is the bug tracker for Web. Find other components at https://github.com/owncloud/core/blob/master/.github/CONTRIBUTING.md#guidelines
+This is the bug tracker for Web.
 
-For fixing potential security issues please see https://owncloud.org/security/
+For fixing potential security issues please see https://opencloud.eu/security/
 
 To make it possible for us to get your change reviewed and merged please carefully fill out the requested information below.
 

@@ -42,16 +42,16 @@
 </template>
 
 <script lang="ts">
-import { isLocationSharesActive, RouteShareTypes } from '@ownclouders/web-pkg'
+import { isLocationSharesActive, RouteShareTypes } from '@opencloud-eu/web-pkg'
 import {
   locationSharesViaLink,
   locationSharesWithMe,
   locationSharesWithOthers
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 
 import { computed, defineComponent, unref } from 'vue'
-import { useRouter } from '@ownclouders/web-pkg'
-import { useActiveLocation } from '@ownclouders/web-pkg'
+import { useRouter } from '@opencloud-eu/web-pkg'
+import { useActiveLocation } from '@opencloud-eu/web-pkg'
 import { useGettext } from 'vue3-gettext'
 import { RouteRecordNormalized } from 'vue-router'
 

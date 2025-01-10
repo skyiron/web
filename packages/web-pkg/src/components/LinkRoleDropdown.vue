@@ -67,7 +67,7 @@ import { v4 as uuidV4 } from 'uuid'
 import { defineComponent, PropType } from 'vue'
 import { computed } from 'vue'
 import { useGettext } from 'vue3-gettext'
-import { SharingLinkType } from '@ownclouders/web-client/graph/generated'
+import { SharingLinkType } from '@opencloud-eu/web-client/graph/generated'
 import { useLinkTypes } from '../composables'
 
 export default defineComponent({

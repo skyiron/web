@@ -430,7 +430,6 @@ export default defineComponent({
 
     &-filled {
       color: var(--oc-color-swatch-primary-contrast) !important;
-      @include oc-background-primary-gradient;
 
       span > svg {
         fill: var(--oc-color-swatch-primary-contrast) !important;

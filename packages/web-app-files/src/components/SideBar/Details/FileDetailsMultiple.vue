@@ -31,7 +31,7 @@
 <script lang="ts">
 import { computed, defineComponent, unref } from 'vue'
 import { storeToRefs } from 'pinia'
-import { formatFileSize, useResourcesStore } from '@ownclouders/web-pkg'
+import { formatFileSize, useResourcesStore } from '@opencloud-eu/web-pkg'
 
 export default defineComponent({
   name: 'FileDetailsMultiple',

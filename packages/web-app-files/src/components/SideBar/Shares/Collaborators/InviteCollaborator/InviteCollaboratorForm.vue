@@ -167,7 +167,7 @@ import {
   ShareRole,
   ShareTypes,
   call
-} from '@ownclouders/web-client'
+} from '@opencloud-eu/web-client'
 import {
   useCapabilityStore,
   useClientService,
@@ -176,16 +176,16 @@ import {
   useConfigStore,
   useSharesStore,
   useUserStore
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 
 import { computed, defineComponent, inject, ref, unref, watch, onMounted, nextTick, Ref } from 'vue'
-import { Resource, SpaceResource } from '@ownclouders/web-client'
+import { Resource, SpaceResource } from '@opencloud-eu/web-client'
 import { DateTime } from 'luxon'
-import { OcDrop } from '@ownclouders/design-system/components'
+import { OcDrop } from '@opencloud-eu/design-system/components'
 import { useTask } from 'vue-concurrency'
 import { useGettext } from 'vue3-gettext'
-import { isProjectSpaceResource } from '@ownclouders/web-client'
-import { Group } from '@ownclouders/web-client/graph/generated'
+import { isProjectSpaceResource } from '@opencloud-eu/web-client'
+import { Group } from '@opencloud-eu/web-client/graph/generated'
 import ExpirationDateIndicator from '../../ExpirationDateIndicator.vue'
 
 // just a dummy function to trick gettext tools
