@@ -17,6 +17,8 @@ x-opencloud-server: &opencloud-service
     # WEB
     WEB_ASSET_CORE_PATH: ${WEB_ASSET_CORE_PATH:-/web/dist}
     WEB_ASSET_APPS_PATH: ${WEB_ASSET_APPS_PATH:-/web/apps}
+    WEB_ASSET_THEMES_PATH: ${WEB_ASSET_THEMES_PATH:-/web/themes}
+    WEB_UI_THEME_PATH: ${WEB_UI_THEME_PATH:-/themes/opencloud/theme.json}
     WEB_UI_CONFIG_FILE: ${WEB_UI_CONFIG_FILE:-/web/config.json}
 
     #FRONTEND
@@ -109,6 +111,7 @@ services:
       - ./dev/docker/opencloud-ca:/var/lib/opencloud/proxy
       - ./dev/docker/opencloud.storage.ocmproviders.json:/etc/opencloud/ocmproviders.json
       - ./dev/docker/apps:/web/apps
+      - ./dev/docker/ocis-themes:/web/themes
       - ./dist:/web/dist
       - ./dev/docker/opencloud/app-registry.yaml:/etc/opencloud/app-registry.yaml
       - opencloud-config:/etc/opencloud

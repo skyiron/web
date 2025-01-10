@@ -5,6 +5,7 @@ import { useLocalStorage, usePreferredDark } from '@vueuse/core'
 import { z } from 'zod'
 import { applyCustomProp } from '@opencloud-eu/design-system/helpers'
 import { ShareRole } from '@opencloud-eu/web-client'
+import kebabCase from 'lodash-es/kebabCase'
 
 const AppBanner = z.object({
   title: z.string().optional(),
@@ -34,6 +35,7 @@ const CommonSection = z.object({
 
 const DesignTokens = z.object({
   breakpoints: z.record(z.string()).optional(),
+  roles: z.record(z.string()).optional(),
   colorPalette: z.record(z.string()).optional(),
   fontFamily: z.string().optional(),
   fontSizes: z.record(z.string()).optional(),
@@ -129,6 +131,7 @@ export const useThemeStore = defineStore('theme', () => {
 
     const customizableDesignTokens = [
       { name: 'breakpoints', prefix: 'breakpoint' },
+      { name: 'roles', prefix: 'role' },
       { name: 'colorPalette', prefix: 'color' },
       { name: 'fontSizes', prefix: 'font-size' },
       { name: 'sizes', prefix: 'size' },
@@ -140,7 +143,7 @@ export const useThemeStore = defineStore('theme', () => {
     customizableDesignTokens.forEach((token) => {
       for (const param in unref(currentTheme).designTokens[token.name]) {
         applyCustomProp(
-          `${token.prefix}-${param}`,
+          `${token.prefix}-${kebabCase(param)}`,
           unref(currentTheme).designTokens[token.name][param]
         )
       }

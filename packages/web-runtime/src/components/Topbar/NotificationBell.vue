@@ -2,8 +2,8 @@
   <oc-button
     id="oc-notifications-bell"
     v-oc-tooltip="notificationsLabel"
-    appearance="raw-inverse"
-    variation="primary"
+    appearance="raw"
+    color-role="secondary"
     :aria-label="notificationsLabel"
   >
     <oc-icon

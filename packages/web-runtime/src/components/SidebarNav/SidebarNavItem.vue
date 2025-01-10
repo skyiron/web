@@ -4,7 +4,7 @@
       v-oc-tooltip="toolTip"
       :type="handler ? 'button' : 'router-link'"
       appearance="raw"
-      :variation="active ? 'primary' : 'passive'"
+      color-role="secondary"
       :class="['oc-sidebar-nav-item-link', 'oc-oc-width-1-1', { active: active }]"
       :data-nav-id="index"
       :data-nav-name="navName"
@@ -118,7 +118,7 @@ export default defineComponent({
     transition: 0s;
   }
 
-  &:hover:not(.active) {
+  <<<<<<< HEAD &:hover:not(.active) {
     background-color: var(--oc-color-swatch-brand-hover) !important;
     color: var(--oc-color-swatch-brand-contrast) !important;
     svg {
@@ -130,8 +130,12 @@ export default defineComponent({
   &:focus {
     text-decoration: none !important;
   }
-  &.active {
+  =======>>>>>>>636a4af85 (feat(WIP): theming) &.active {
     overflow: hidden;
+  }
+  &:focus,
+  &:hover {
+    text-decoration: none !important;
   }
 
   .oc-icon svg {

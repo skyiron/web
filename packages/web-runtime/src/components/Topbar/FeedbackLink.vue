@@ -5,12 +5,12 @@
       type="a"
       :href="hrefOrFallback"
       target="_blank"
-      appearance="raw-inverse"
-      variation="primary"
+      appearance="raw"
+      color-role="secondary"
       :aria-label="ariaLabelOrFallback"
       aria-describedby="oc-feedback-link-description"
     >
-      <oc-icon name="feedback" />
+      <oc-icon name="feedback" fill-type="line" />
     </oc-button>
     <p id="oc-feedback-link-description" class="oc-invisible-sr" v-text="descriptionOrFallback" />
   </div>

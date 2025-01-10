@@ -23,5 +23,10 @@
     "app-store",
     "activities",
     "preview"
+  ],
+  "styles": [
+    {
+      "href": "/themes/opencloud/font.css"
+    }
   ]
 }
