@@ -109,10 +109,10 @@ export default defineConfig(({ mode, command }) => {
   /**
      When setting `OPENCLOUD_WEB_CONFIG_URL` make sure to configure the oauth/oidc client
 
-     For OpenCloud instances you can use `./dev/docker/ocis.idp.config.yaml`.
+     For OpenCloud instances you can use `./dev/docker/opencloud.idp.config.yaml`.
      In docker setups you need to mount it to `/etc/ocis/idp.yaml`.
      E.g. with docker-compose you could add a volume to the ocis container like this:
-     - /home/youruser/projects/oc-web/dev/docker/ocis.idp.config.yaml:/etc/ocis/idp.yaml
+     - /home/youruser/projects/oc-web/dev/docker/opencloud.idp.config.yaml:/etc/ocis/idp.yaml
 
      Example:
      OPENCLOUD_WEB_CONFIG_URL="https://your-open-cloud.test/config.json" pnpm vite

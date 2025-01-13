@@ -1,9 +1,8 @@
 {
-  "server": "https://ocis.owncloud.test:10200",
-  "theme": "https://ocis.owncloud.test:10200/themes/owncloud/theme.json",
+  "server": "https://oc.opencloud.test:10200",
   "openIdConnect": {
-    "metadata_url": "https://ocis.owncloud.test:10200/.well-known/openid-configuration",
-    "authority": "https://ocis.owncloud.test:10200",
+    "metadata_url": "https://oc.opencloud.test:10200/.well-known/openid-configuration",
+    "authority": "https://oc.opencloud.test:10200",
     "client_id": "web",
     "response_type": "code",
     "scope": "openid profile email"

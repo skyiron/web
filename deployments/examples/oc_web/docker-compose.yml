@@ -44,24 +44,24 @@ services:
       driver: ${LOG_DRIVER:-local}
     restart: always
 
-  ocis:
+  opencloud:
     image: ${OC_DOCKER_IMAGE:-opencloud-eu/oc-rolling}:${OC_DOCKER_TAG:-master}
     networks:
       oc-net:
     entrypoint:
       - /bin/sh
-    # run ocis init to initialize a configuration file with random secrets
+    # run opencloud init to initialize a configuration file with random secrets
     # it will fail on subsequent runs, because the config file already exists
-    # therefore we ignore the error and then start the ocis server
-    command: ['-c', 'ocis init || true; ocis server']
+    # therefore we ignore the error and then start the opencloud server
+    command: ['-c', 'opencloud init || true; opencloud server']
     environment:
       OC_URL: https://${OC_DOMAIN:-oc.opencloud.test}
-      OC_LOG_LEVEL: ${OC_LOG_LEVEL:-error} # make oCIS less verbose
+      OC_LOG_LEVEL: ${OC_LOG_LEVEL:-error} # make OC less verbose
       OC_LOG_COLOR: "${LOG_PRETTY:-false}"
       OC_LOG_PRETTY: "${LOG_PRETTY:-false}"
-      PROXY_TLS: 'false' # do not use SSL between Traefik and oCIS
+      PROXY_TLS: 'false' # do not use SSL between Traefik and OC
       GATEWAY_GRPC_ADDR: 0.0.0.0:9142 # make the REVA gateway accessible to the app drivers
-      # INSECURE: needed if oCIS / Traefik is using self generated certificates
+      # INSECURE: needed if OC / Traefik is using self generated certificates
       OC_INSECURE: '${INSECURE:-false}'
       # basic auth (not recommended, but needed for eg. WebDAV clients that do not support OpenID Connect)
       PROXY_ENABLE_BASIC_AUTH: '${PROXY_ENABLE_BASIC_AUTH:-false}'
@@ -73,7 +73,7 @@ services:
       OC_ADD_RUN_SERVICES: "notifications"
       NOTIFICATIONS_SMTP_HOST: inbucket
       NOTIFICATIONS_SMTP_PORT: 2500
-      NOTIFICATIONS_SMTP_SENDER: oCIS notifications <notifications@${OC_DOMAIN:-oc.opencloud.test}>
+      NOTIFICATIONS_SMTP_SENDER: OC notifications <notifications@${OC_DOMAIN:-oc.opencloud.test}>
       NOTIFICATIONS_SMTP_USERNAME: notifications@${OC_DOMAIN:-oc.opencloud.test}
       NOTIFICATIONS_SMTP_INSECURE: "true" # the mail catcher uses self signed certificates
       # fulltext search
@@ -84,7 +84,7 @@ services:
       # make the registry available to the app provider containers
       NATS_NATS_HOST: 0.0.0.0
       # CSP configs
-      PROXY_CSP_CONFIG_FILE_LOCATION: /etc/ocis/csp.yaml
+      PROXY_CSP_CONFIG_FILE_LOCATION: /etc/opencloud/csp.yaml
       # these two vars are needed in the csp config file to include the web office apps and the importer
       COLLABORA_DOMAIN: ${COLLABORA_DOMAIN:-collabora.opencloud.test}
       COMPANION_DOMAIN: ${COMPANION_DOMAIN:-companion.opencloud.test}
@@ -93,19 +93,19 @@ services:
       # make collabora the secure view app
       FRONTEND_APP_HANDLER_SECURE_VIEW_APP_ADDR: eu.opencloud.api.collaboration.Collabora
     volumes:
-      - ./config/ocis/proxy.yaml:/etc/ocis/proxy.yaml
-      - ./config/ocis/app-registry.yaml:/etc/ocis/app-registry.yaml
-      - ./config/ocis/csp.yaml:/etc/ocis/csp.yaml
-      - ./config/ocis/banned-password-list.txt:/etc/ocis/banned-password-list.txt
-      - oc-config:/etc/ocis
-      - oc-data:/var/lib/ocis
+      - ./config/opencloud/proxy.yaml:/etc/opencloud/proxy.yaml
+      - ./config/opencloud/app-registry.yaml:/etc/opencloud/app-registry.yaml
+      - ./config/opencloud/csp.yaml:/etc/opencloud/csp.yaml
+      - ./config/opencloud/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
+      - oc-config:/etc/opencloud
+      - oc-data:/var/lib/opencloud
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.oc.entrypoints=https'
-      - 'traefik.http.routers.oc.rule=Host(`${OC_DOMAIN:-oc.opencloud.test}`)'
-      - 'traefik.http.routers.oc.tls.certresolver=http'
-      - 'traefik.http.routers.oc.service=ocis'
-      - 'traefik.http.services.oc.loadbalancer.server.port=9200'
+      - 'traefik.http.routers.opencloud.entrypoints=https'
+      - 'traefik.http.routers.opencloud.rule=Host(`${OC_DOMAIN:-oc.opencloud.test}`)'
+      - 'traefik.http.routers.opencloud.tls.certresolver=http'
+      - 'traefik.http.routers.opencloud.service=opencloud'
+      - 'traefik.http.services.opencloud.loadbalancer.server.port=9200'
     logging:
       driver: ${LOG_DRIVER:-local}
     restart: always
@@ -123,13 +123,13 @@ services:
     networks:
       oc-net:
     depends_on:
-      ocis:
+      opencloud:
         condition: service_started
       collabora:
         condition: service_healthy
     entrypoint:
       - /bin/sh
-    command: [ "-c", "ocis collaboration server" ]
+    command: [ "-c", "opencloud collaboration server" ]
     environment:
       COLLABORATION_GRPC_ADDR: 0.0.0.0:9301
       COLLABORATION_HTTP_ADDR: 0.0.0.0:9300
@@ -140,10 +140,10 @@ services:
       COLLABORATION_APP_INSECURE: "${INSECURE:-true}"
       COLLABORATION_CS3API_DATAGATEWAY_INSECURE: "${INSECURE:-true}"
       COLLABORATION_LOG_LEVEL: ${LOG_LEVEL:-info}
-      MICRO_REGISTRY_ADDRESS: "ocis:9233"
+      MICRO_REGISTRY_ADDRESS: "opencloud:9233"
       OC_URL: https://${OC_DOMAIN:-oc.opencloud.test}
     volumes:
-      - oc-config:/etc/ocis
+      - oc-config:/etc/opencloud
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.collaboration.entrypoints=https"
