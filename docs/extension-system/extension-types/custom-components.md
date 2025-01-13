@@ -40,7 +40,7 @@ targeted at the `global-progress-bar` extension point as render target.
 
 ```typescript
 const extension = {
-    id: 'com.github.owncloud.web.app.progress-bars.nyan-cat',
+    id: 'com.github.opencloud-eu.web.app.progress-bars.nyan-cat',
     type: 'customComponent',
     extensionPointIds: ['app.runtime.global-progress-bar'],
     content: (slots) => [h(NyanCat, slots)],

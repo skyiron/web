@@ -30,7 +30,7 @@ export const extensions = (appInfo: ApplicationInformation) => {
     ...folderViewExtensions,
     ...sideBarPanelExtensions,
     {
-      id: 'com.github.owncloud.web.files.search',
+      id: 'com.github.opencloud-eu.web.files.search',
       extensionPointIds: ['app.search.provider'],
       type: 'search',
       searchProvider: new SDKSearch(capabilityStore, router, searchFunction, configStore)

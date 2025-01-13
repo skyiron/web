@@ -12,7 +12,7 @@ import serve from 'rollup-plugin-serve'
 
 const distDir = 'dist'
 
-const certsDir = process.env.OWNCLOUD_CERTS_DIR
+const certsDir = process.env.OPENCLOUD_CERTS_DIR
 const defaultHttps = () =>
   certsDir && {
     key: readFileSync(join(certsDir, 'server.key')),

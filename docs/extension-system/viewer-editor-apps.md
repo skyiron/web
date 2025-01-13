@@ -29,7 +29,7 @@ To learn more about apps in general, please refer to the [Web app docs]({{< ref 
 Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section]({{< ref "_index.md#apps" >}}), so it may look like this:
 
 ```typescript
-import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@ownclouders/web-pkg'
+import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@opencloud-eu/web-pkg'
 import translations from '../l10n/translations.json'
 import { useGettext } from 'vue3-gettext'
 import { computed } from 'vue'

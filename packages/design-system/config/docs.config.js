@@ -7,7 +7,7 @@ module.exports = {
   /**
    * Name of your design system. Changes both page title and sidebar logo.
    */
-  title: 'ownCloud Design System',
+  title: 'OpenCloud Design System',
   webpackConfig: baseConfig,
   /**
    * Most of the styles are defined in /docs/docs.styles.scss
@@ -33,7 +33,7 @@ module.exports = {
    */
   assetsDir: path.join(__dirname, '../src/assets'),
   /**
-   * Enabling the below option will break things in ownCloud Design System!
+   * Enabling the below option will break things in OpenCloud Design System!
    */
   skipComponentsWithoutExample: false,
   renderRootJsx: '../docs/components/Preview.js',
@@ -180,7 +180,7 @@ module.exports = {
    * Custom wrapper template for the documentation.
    */
   template: {
-    title: 'Example — ownCloud Design System',
+    title: 'Example — OpenCloud Design System',
     lang: 'en',
     trimWhitespace: true,
     head: {

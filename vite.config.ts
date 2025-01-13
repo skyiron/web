@@ -194,7 +194,7 @@ export default defineConfig(({ mode, command }) => {
         // The downside of this approach is that @extend does not work because it modifies the global styles, thus we emit
         // a warning if `@extend` is used in the code base.
         {
-          name: '@ownclouders/vite-plugin-strip-css',
+          name: '@opencloud-eu/vite-plugin-strip-css',
           transform(src: string, id: string) {
             if (id.endsWith('.vue') && !id.includes('node_modules') && src.includes('@extend')) {
               console.warn(
@@ -246,7 +246,7 @@ export default defineConfig(({ mode, command }) => {
           })()
         }),
         {
-          name: '@ownclouders/vite-plugin-runtime-config',
+          name: '@opencloud-eu/vite-plugin-runtime-config',
           configureServer(server: ViteDevServer) {
             server.middlewares.use(async (request, response, next) => {
               if (request.url === '/config.json') {
@@ -267,7 +267,7 @@ export default defineConfig(({ mode, command }) => {
           }
         },
         {
-          name: '@ownclouders/vite-plugin-docs',
+          name: '@opencloud-eu/vite-plugin-docs',
           transform(src, id) {
             if (id.includes('type=docs')) {
               return {

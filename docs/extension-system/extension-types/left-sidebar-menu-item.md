@@ -51,7 +51,7 @@ export const useCustomPageExtension = () => {
   const { $gettext } = useGettext()
 
   const extension = computed<SidebarNavExtension>(() => ({
-    id: 'com.github.owncloud.web.files.left-nav.custom-page',
+    id: 'com.github.opencloud-eu.web.files.left-nav.custom-page',
     scopes: ['app.files'],
     type: 'sidebarNav',
     action: {

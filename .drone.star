@@ -1698,7 +1698,7 @@ def buildDesignSystemDocs():
         "name": "build-design-system-docs",
         "image": OC_CI_NODEJS,
         "commands": [
-            "pnpm --filter @ownclouders/design-system build:docs",
+            "pnpm --filter @opencloud-eu/design-system build:docs",
         ],
     }]
 

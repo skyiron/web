@@ -8,7 +8,7 @@ import { ArchiverCapability } from '@opencloud-eu/web-client/ocs'
 import { createTestingPinia } from '@opencloud-eu/web-test-helpers'
 import { useUserStore } from '../../../src/composables/piniaStores'
 
-const serverUrl = 'https://demo.owncloud.com'
+const serverUrl = 'https://demo.opencloud.eu'
 const getArchiverServiceInstance = (capabilities: Ref<ArchiverCapability[]>) => {
   createTestingPinia()
   const userStore = useUserStore()

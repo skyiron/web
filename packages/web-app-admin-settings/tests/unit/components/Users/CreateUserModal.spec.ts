@@ -94,7 +94,7 @@ describe('CreateUserModal', () => {
 
     it('should be true when email is valid', () => {
       const { wrapper } = getWrapper()
-      wrapper.vm.user.mail = 'jana@owncloud.com'
+      wrapper.vm.user.mail = 'jana@opencloud.eu'
       expect(wrapper.vm.validateEmail()).toBeTruthy()
     })
   })

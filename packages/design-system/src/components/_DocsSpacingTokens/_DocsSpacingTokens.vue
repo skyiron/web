@@ -22,7 +22,7 @@ import designTokens from '../../assets/tokens/ods.json'
  * tokens are used for padding, margins, and position together with
  * [spacing utilities](https://github.com/owncloud/owncloud-design-system/wiki/spacing).
  * To edit spacing, see
- * [/src/tokens/spacing.yml](https://github.com/opencloud-eu/web/blob/master/packages/design-system/src/tokens/spacing.yml).
+ * [/src/tokens/spacing.yml](https://github.com/opencloud-eu/web/blob/main/packages/design-system/src/tokens/spacing.yml).
  */
 export default defineComponent({
   name: 'DocsSpacingTokens',

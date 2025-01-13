@@ -160,7 +160,7 @@ export const bootstrapApp = async (configurationPath: string, appsReadyCallback:
   app.component('AvatarImage', Avatar)
   app.mixin(focusMixin)
 
-  app.mount('#owncloud')
+  app.mount('#opencloud')
 
   if (isSilentRedirect) {
     return
@@ -294,7 +294,7 @@ export const bootstrapErrorApp = async (err: Error): Promise<void> => {
   const translations = await loadTranslations()
   const gettext = announceGettext({ app, availableLanguages: supportedLanguages })
   announceTranslations({ gettext, coreTranslations: translations })
-  app.mount('#owncloud')
+  app.mount('#opencloud')
 }
 ;(window as any).runtimeLoaded({
   bootstrapApp,

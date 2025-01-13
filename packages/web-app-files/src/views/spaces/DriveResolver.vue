@@ -157,7 +157,7 @@ export default defineComponent({
         if (space.fileId === space.id) {
           const publicSpace = (await getSpaceResource()) as PublicSpaceResource
 
-          // FIXME: check for type once https://github.com/owncloud/ocis/issues/8740 is resolved
+          // FIXME: check for type when server sends public-link-permission dav property
           if (publicSpace.publicLinkPermission === SharePermissionBit.Create) {
             router.push({
               name: locationPublicUpload.name,

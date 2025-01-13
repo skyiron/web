@@ -67,7 +67,7 @@ function getMountedWrapper({
 
   const extensions = [
     {
-      id: 'com.github.owncloud.web.files.folder-view.resource-table',
+      id: 'com.github.opencloud-eu.web.files.folder-view.resource-table',
       type: 'folderView',
       extensionPointIds: [
         folderViewsFolderExtensionPoint.id,

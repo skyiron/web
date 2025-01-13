@@ -57,7 +57,7 @@ export default defineWebApplication({
 
     const menuItems = computed<AppMenuItemExtension[]>(() => [
       {
-        id: 'com.github.owncloud.web.my-cool-app.menu-item',
+        id: 'com.github.opencloud-eu.web.my-cool-app.menu-item',
         type: 'appMenuItem',
         label: () => $gettext('My cool app'),
         path: urlJoin(appId),

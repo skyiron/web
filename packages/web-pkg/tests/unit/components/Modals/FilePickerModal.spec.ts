@@ -17,7 +17,7 @@ describe('FilePickerModal', () => {
     })
     it('sets the iframe title correctly', () => {
       const { wrapper } = getWrapper()
-      expect(wrapper.vm.iframeTitle).toEqual('ownCloud')
+      expect(wrapper.vm.iframeTitle).toEqual('OpenCloud')
     })
   })
   describe('method "onFilePick"', () => {

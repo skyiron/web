@@ -23,7 +23,7 @@
       - https://github.com/micbar.keys
     docker_compose_projects:
       - name: web
-        git_url: https://github.com/opencloud/web.git
+        git_url: https://github.com/opencloud-eu/web.git
         ref: master
         docker_compose_path: deployments/examples/oc_web
         env:

@@ -10,14 +10,14 @@
     "design",
     "system"
   ],
-  "homepage": "https://owncloud.design/",
+  "homepage": "https://opencloud.design/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owncloud/web",
+    "url": "https://github.com/opencloud-eu/web",
     "directory": "packages/design-system"
   },
   "license": "AGPL-3.0",
-  "author": "ownClouders",
+  "author": "OpenCloud",
   "main": "src/index.ts",
   "private": false,
   "scripts": {

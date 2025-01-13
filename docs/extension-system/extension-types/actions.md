@@ -52,7 +52,7 @@ export const useDownloadFilesExtension = () => {
   const { $gettext } = useGettext()
 
   const extension = computed<ActionExtension>(() => ({
-    id: 'com.github.owncloud.web.files.download-action',
+    id: 'com.github.opencloud-eu.web.files.download-action',
     scopes: ['resource'],
     type: 'action',
     action: {

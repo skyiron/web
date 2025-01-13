@@ -47,7 +47,7 @@ export const useCustomFolderViewExtension = () => {
   const { $gettext } = useGettext()
 
   const extension = computed<FolderViewExtension>(() => ({
-    id: 'com.github.owncloud.web.files.folder-view.custom',
+    id: 'com.github.opencloud-eu.web.files.folder-view.custom',
     type: 'folderView',
     scopes: ['resource', 'space', 'favorite'],
     folderView: {

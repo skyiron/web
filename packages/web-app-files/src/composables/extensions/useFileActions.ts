@@ -18,19 +18,19 @@ export const useFileActions = (): ActionExtension[] => {
 
   return [
     {
-      id: 'com.github.owncloud.web.files.context-action.open-shortcut',
+      id: 'com.github.opencloud-eu.web.files.context-action.open-shortcut',
       extensionPointIds: [contextActionsExtensionPoint.id, defaultActionsExtensionPoint.id],
       type: 'action',
       action: unref(openShortcutActions)[0]
     },
     {
-      id: 'com.github.owncloud.web.files.quick-action.collaborator',
+      id: 'com.github.opencloud-eu.web.files.quick-action.collaborator',
       extensionPointIds: [quickActionsExtensionPoint.id],
       type: 'action',
       action: unref(showSharesActions)[0]
     },
     {
-      id: 'com.github.owncloud.web.files.quick-action.quicklink',
+      id: 'com.github.opencloud-eu.web.files.quick-action.quicklink',
       extensionPointIds: [quickActionsExtensionPoint.id],
       type: 'action',
       action: unref(permanentLinkActions)[0]

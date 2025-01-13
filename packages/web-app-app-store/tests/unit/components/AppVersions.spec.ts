@@ -62,7 +62,7 @@ describe('AppVersions.vue', () => {
       }
     })
   })
-  it('renders the minimum required ocis version if present or "-" if not', () => {
+  it('renders the minimum required OpenCloud version if present or "-" if not', () => {
     const { wrapper } = getWrapper()
     const rows = wrapper.findAll(selectors.versionRow)
     rows.forEach((row, index) => {

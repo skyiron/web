@@ -2,7 +2,7 @@
   "name": "web-app-activities",
   "version": "0.0.0",
   "private": true,
-  "description": "ownCloud activities app",
+  "description": "Opencloud activities app",
   "license": "AGPL-3.0",
   "devDependencies": {
     "@opencloud-eu/web-test-helpers": "workspace:*"

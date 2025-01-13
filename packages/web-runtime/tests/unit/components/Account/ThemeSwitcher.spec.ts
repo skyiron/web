@@ -1,10 +1,10 @@
 import { WebThemeType, useThemeStore } from '@opencloud-eu/web-pkg'
 import { mock } from 'vitest-mock-extended'
 import ThemeSwitcher from '../../../../src/components/Account/ThemeSwitcher.vue'
-import defaultTheme from '../../../../themes/owncloud/theme.json'
+import defaultTheme from '../../../../themes/opencloud/theme.json'
 import { defaultPlugins, defaultStubs, mount } from '@opencloud-eu/web-test-helpers'
 
-const defaultOwnCloudTheme = {
+const defaultOpenCloudTheme = {
   defaults: {
     ...defaultTheme.clients.web.defaults,
     common: defaultTheme.common
@@ -18,7 +18,7 @@ describe('ThemeSwitcher component', () => {
       const { wrapper } = getWrapper({ hasOnlyOneTheme: false })
       const themeStore = useThemeStore()
       window.localStorage.setItem('oc_currentThemeName', 'Light Theme')
-      themeStore.initializeThemes(defaultOwnCloudTheme)
+      themeStore.initializeThemes(defaultOpenCloudTheme)
       await wrapper.vm.$nextTick()
       expect(wrapper.html()).toMatchSnapshot()
     })
@@ -26,7 +26,7 @@ describe('ThemeSwitcher component', () => {
       const { wrapper } = getWrapper()
       const themeStore = useThemeStore()
       window.localStorage.setItem('oc_currentThemeName', 'Dark Theme')
-      themeStore.initializeThemes(defaultOwnCloudTheme)
+      themeStore.initializeThemes(defaultOpenCloudTheme)
       await wrapper.vm.$nextTick()
       expect(wrapper.html()).toMatchSnapshot()
     })
@@ -48,8 +48,8 @@ function getWrapper({ hasOnlyOneTheme = false } = {}) {
               themeState: {
                 availableThemes,
                 currentTheme: mock<WebThemeType>({
-                  ...defaultOwnCloudTheme.defaults,
-                  ...defaultOwnCloudTheme.themes[0]
+                  ...defaultOpenCloudTheme.defaults,
+                  ...defaultOpenCloudTheme.themes[0]
                 })
               }
             }

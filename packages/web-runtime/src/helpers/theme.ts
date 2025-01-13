@@ -1,10 +1,10 @@
 import { isEqual } from 'lodash-es'
-import defaultTheme from '../../themes/owncloud/theme.json'
+import defaultTheme from '../../themes/opencloud/theme.json'
 import { v4 as uuidV4 } from 'uuid'
 import { ThemingConfig } from '@opencloud-eu/web-pkg'
 
 export const loadTheme = async (location = '') => {
-  const defaultOwnCloudTheme = {
+  const defaultOpenCloudTheme = {
     defaults: {
       ...defaultTheme.clients.web.defaults,
       common: defaultTheme.common
@@ -16,14 +16,14 @@ export const loadTheme = async (location = '') => {
     if (isEqual(process.env.NODE_ENV, 'development')) {
       console.info(`Theme '${location}' does not specify a json file, using default theme.`)
     }
-    return defaultOwnCloudTheme
+    return defaultOpenCloudTheme
   }
 
   try {
     const response = await fetch(location, { headers: { 'X-Request-ID': uuidV4() } })
     if (!response.ok) {
       console.error(`Failed to load theme '${location}', invalid response. Using default theme.`)
-      return defaultOwnCloudTheme
+      return defaultOpenCloudTheme
     }
 
     const theme = await response.json()
@@ -43,10 +43,10 @@ export const loadTheme = async (location = '') => {
         `Failed to load theme '${location}', invalid theme. Using default theme.`,
         error
       )
-      return defaultOwnCloudTheme
+      return defaultOpenCloudTheme
     }
   } catch {
     console.error(`Failed to load theme '${location}', using default theme.`)
-    return defaultOwnCloudTheme
+    return defaultOpenCloudTheme
   }
 }

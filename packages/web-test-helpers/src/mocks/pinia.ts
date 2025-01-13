@@ -98,7 +98,7 @@ export function createMockStore({
   userState = {},
   capabilityState = {}
 }: PiniaMockOptions = {}) {
-  const defaultOwnCloudTheme = {
+  const defaultOpenCloudTheme = {
     defaults: {
       ...defaultTheme.clients.web.defaults,
       common: {
@@ -132,10 +132,10 @@ export function createMockStore({
       },
       theme: {
         currentTheme: {
-          ...defaultOwnCloudTheme.defaults,
-          ...defaultOwnCloudTheme.themes[0]
+          ...defaultOpenCloudTheme.defaults,
+          ...defaultOpenCloudTheme.themes[0]
         },
-        availableThemes: defaultOwnCloudTheme.themes,
+        availableThemes: defaultOpenCloudTheme.themes,
         ...themeState
       },
       resources: { resources: [], ...resourcesStore },

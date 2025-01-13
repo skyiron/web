@@ -6,8 +6,8 @@ import { AxiosResponse } from 'axios'
 
 const getDefaultOptions = () => ({
   clientService: mockDeep<ClientService>(),
-  server: 'https://www.ocis.rules/',
-  username: 'ocis',
+  server: 'https://www.opencloud.rules/',
+  username: 'opencloud',
   token: 'rules'
 })
 

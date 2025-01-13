@@ -94,7 +94,7 @@ export const useExifDataPanelExtension = () => {
   const { $gettext } = useGettext()
 
   const extension = computed<SidebarPanelExtension<SpaceResource, Resource, Resource>>(() => ({
-    id: 'com.github.owncloud.web.files.sidebar-panel.exif-data',
+    id: 'com.github.opencloud-eu.web.files.sidebar-panel.exif-data',
     type: 'sidebarPanel',
     scopes: ['resource'],
     panel: {

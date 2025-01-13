@@ -1,7 +1,7 @@
 {
   "name": "@opencloud-eu/web-test-helpers",
   "version": "11.0.6",
-  "description": "ownCloud web test helpers",
+  "description": "OpenCloud web test helpers",
   "license": "AGPL-3.0",
   "private": false,
   "type": "module",
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/opencloud-eu/web/tree/main/packages/web-test-helpers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owncloud/web",
+    "url": "https://github.com/opencloud-eu/web",
     "directory": "packages/web-test-helpers"
   },
   "files": [

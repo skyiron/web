@@ -1,7 +1,7 @@
 {
   "name": "@opencloud-eu/extension-sdk",
   "version": "11.0.6",
-  "description": "ownCloud Web Extension SDK",
+  "description": "OpenCloud Web Extension SDK",
   "license": "AGPL-3.0",
   "main": "index.mjs",
   "type": "module",
@@ -10,7 +10,7 @@
   "homepage": "https://github.com/opencloud-eu/web/tree/main/packages/extension-sdk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owncloud/web",
+    "url": "https://github.com/opencloud-eu/web",
     "directory": "packages/extension-sdk"
   },
   "dependencies": {

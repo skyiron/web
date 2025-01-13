@@ -9,7 +9,7 @@
   "homepage": "https://github.com/opencloud-eu/web/tree/main/packages/eslint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owncloud/web",
+    "url": "https://github.com/opencloud-eu/web",
     "directory": "packages/eslint-config"
   },
   "exports": {

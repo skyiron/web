@@ -349,7 +349,7 @@ export default defineComponent({
     }
 
     const handlePasteFileEvent = (event: ClipboardEvent) => {
-      // Ignore file in clipboard if there are already files from owncloud in the clipboard
+      // Ignore file in clipboard if there are already files from OpenCloud in the clipboard
       if (unref(clipboardResources).length || !unref(canUpload)) {
         return
       }

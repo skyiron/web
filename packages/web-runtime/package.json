@@ -2,7 +2,7 @@
   "name": "web-runtime",
   "version": "0.0.0",
   "private": true,
-  "description": "ownCloud web runtime",
+  "description": "OpenCloud web runtime",
   "license": "AGPL-3.0",
   "dependencies": {
     "@casl/ability": "6.7.2",

@@ -2,7 +2,7 @@
   "name": "web-app-search",
   "version": "0.0.0",
   "private": true,
-  "description": "ownCloud web search",
+  "description": "OpenCloud web search",
   "license": "AGPL-3.0",
   "devDependencies": {
     "flush-promises": "1.0.2",

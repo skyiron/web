@@ -41,9 +41,9 @@ describe('OcInfoDrop', () => {
       })
     })
     it('should set a readMore link', () => {
-      const wrapper = getWrapperWithProps({ readMoreLink: 'owncloud.design' })
+      const wrapper = getWrapperWithProps({ readMoreLink: 'opencloud.design' })
       const attributes = wrapper.find('.info-more-link').attributes()
-      expect(attributes['href']).toBe('owncloud.design')
+      expect(attributes['href']).toBe('opencloud.design')
       expect(attributes['target']).toBe('_blank')
     })
     it('should set end-text prop', () => {

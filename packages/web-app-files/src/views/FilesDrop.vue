@@ -178,7 +178,7 @@ export default defineComponent({
         .listFiles(space, {}, { depth: 0 })
         .then(({ resource }) => {
           // Redirect to files list if the link doesn't have role "uploader"
-          // FIXME: check for type once https://github.com/owncloud/ocis/issues/8740 is resolved
+          // FIXME: check for type once public-link-permission dav property is set correctly and reflects sharing–ng
           const sharePermissions = (resource as PublicSpaceResource).publicLinkPermission
           if (sharePermissions !== SharePermissionBit.Create) {
             router.replace(

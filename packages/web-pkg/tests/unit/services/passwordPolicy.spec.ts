@@ -79,31 +79,31 @@ describe('PasswordPolicyService', () => {
           [{} as PasswordPolicyCapability, ['', 'o'], false, [true, true]],
           [
             { min_characters: 2 } as PasswordPolicyCapability,
-            ['', 'o', 'ow', 'ownCloud'],
+            ['', 'o', 'ow', 'OpenCloud'],
             false,
             [false, false, true, true]
           ],
           [
             { min_lowercase_characters: 2 } as PasswordPolicyCapability,
-            ['', 'o', 'oWNCLOUD', 'ownCloud'],
+            ['', 'o', 'oPENCLOUD', 'OpenCloud'],
             false,
             [false, false, false, true]
           ],
           [
             { min_uppercase_characters: 2 } as PasswordPolicyCapability,
-            ['', 'o', 'ownCloud', 'ownCLoud'],
+            ['', 'o', 'opencloud', 'OpenCloud'],
             false,
             [false, false, false, true]
           ],
           [
             { min_digits: 2 } as PasswordPolicyCapability,
-            ['', '1', 'ownCloud1', 'ownCloud12'],
+            ['', '1', 'OpenCloud1', 'OpenCloud12'],
             false,
             [false, false, false, true]
           ],
           [
             { min_special_characters: 2 } as PasswordPolicyCapability,
-            ['', '!', 'ownCloud!', 'ownCloud!#'],
+            ['', '!', 'OpenCloud!', 'OpenCloud!#'],
             false,
             [false, false, false, true]
           ],
@@ -116,7 +116,7 @@ describe('PasswordPolicyService', () => {
               min_special_characters: 2,
               max_characters: 72
             } as PasswordPolicyCapability,
-            ['öwnCloud', 'öwnCloudää', 'öwnCloudää12', 'öwnCloudäÄ12#!'],
+            ['OpenCloud', 'OpenCloudää', 'OpenCloudää12', 'OpenCloudÄ12#!'],
             false,
             [false, false, false, true]
           ]

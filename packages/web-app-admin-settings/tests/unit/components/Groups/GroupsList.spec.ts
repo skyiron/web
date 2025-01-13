@@ -60,7 +60,7 @@ describe('GroupsList', () => {
       const { wrapper } = getWrapper()
 
       expect(
-        wrapper.vm.filter([{ displayName: 'admins' }, { displayName: 'users' }], 'ownClouders')
+        wrapper.vm.filter([{ displayName: 'admins' }, { displayName: 'users' }], 'guests')
       ).toEqual([])
     })
   })

@@ -233,7 +233,7 @@ export default defineComponent({
     }
     const notifyShare = async () => {
       // FIXME: cern code
-      // const response = await clientService.owncloudSdk.shares.notifyShare(props.share.id)
+      // const response = await clientService.openCloudSdk.shares.notifyShare(props.share.id)
     }
 
     const sharedViaTooltip = computed(() =>

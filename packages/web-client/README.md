@@ -24,7 +24,7 @@ $ yarn add @opencloud-eu/web-client
 
 ### Graph
 
-The graph client needs to be instantiated with a base URI corresponding to your oCIS deployment and an axios instance. The axios instance is being used for all requests, which means it needs to include all relevant headers either statically or via interceptor.
+The graph client needs to be instantiated with a base URI corresponding to your OpenCloud deployment and an axios instance. The axios instance is being used for all requests, which means it needs to include all relevant headers either statically or via interceptor.
 
 ```
 import axios from axios
@@ -48,7 +48,7 @@ const mySpaces = await graphClient.drives.listMyDrives()
 
 ### OCS
 
-The ocs client needs to be instantiated with a base URI corresponding to your oCIS deployment and an axios instance. The axios instance is being used for all requests, which means it needs to include all relevant headers either statically or via interceptor.
+The ocs client needs to be instantiated with a base URI corresponding to your OpenCloud deployment and an axios instance. The axios instance is being used for all requests, which means it needs to include all relevant headers either statically or via interceptor.
 
 ```
 import axios from axios
@@ -74,7 +74,7 @@ const signedUrl = await ocsClient.signUrl('some_url_to_sign', 'your_username')
 
 ### WebDav
 
-The webdav client needs to be instantiated with a base URI corresponding to your oCIS deployment. You can also pass a header callback which will be called with every dav request.
+The webdav client needs to be instantiated with a base URI corresponding to your OpenCloud deployment. You can also pass a header callback which will be called with every dav request.
 
 ```
 import { webdav } from '@opencloud-eu/web-client'

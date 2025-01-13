@@ -186,7 +186,7 @@ export default defineComponent({
       navBarClosed.value = value
     }
 
-    const progressBarExtensionId = 'com.github.owncloud.web.runtime.default-progress-bar'
+    const progressBarExtensionId = 'com.github.opencloud-eu.web.runtime.default-progress-bar'
     const progressBarExtensionPointId = 'app.runtime.global-progress-bar'
     const defaultProgressBarExtension: CustomComponentExtension = {
       id: progressBarExtensionId,

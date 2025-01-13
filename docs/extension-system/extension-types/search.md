@@ -82,7 +82,7 @@ export const useSolrSearchExtension = () => {
   }
 
   const extension = computed<SearchExtension>(() => ({
-    id: 'com.github.owncloud.web.solr-search',
+    id: 'com.github.opencloud-eu.web.solr-search',
     type: 'search',
     searchProvider
   }))
@@ -100,8 +100,8 @@ The search component for the preview search container may look like this:
 
 <script lang="ts">
 import { computed, defineComponent, PropType } from 'vue'
-import { Resource } from '@ownclouders/web-client'
-import { SearchResultValue, ResourceListItem } from '@ownclouders/web-pkg'
+import { Resource } from '@opencloud-eu/web-client'
+import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg'
 
 export default defineComponent({
   name: 'SolarSearchComponent',

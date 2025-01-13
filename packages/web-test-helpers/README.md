@@ -1,6 +1,6 @@
 # web-test-helpers
 
-This packages provides utilities for unit testing within the ownCloud app ecosystem.
+This packages provides utilities for unit testing within the OpenCloud app ecosystem.
 
 ## Installation
 
