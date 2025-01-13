@@ -1,9 +1,9 @@
 {
   "version": "11.0.6",
   "private": true,
-  "homepage": "https://github.com/owncloud/web",
+  "homepage": "https://github.com/opencloud-eu/web",
   "license": "AGPL-3.0",
-  "author": "ownCloud GmbH <devops@owncloud.com>",
+  "author": "OpenCloud GmbH <info@opencloud-eu>",
   "type": "module",
   "scripts": {
     "build": "vue-demi-fix && pnpm build:tokens && pnpm vite build",
