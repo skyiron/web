@@ -7,8 +7,8 @@ import {
   Extension,
   useAbility,
   useUserStore
-} from '@ownclouders/web-pkg'
-import { urlJoin } from '@ownclouders/web-client'
+} from '@opencloud-eu/web-pkg'
+import { urlJoin } from '@opencloud-eu/web-client'
 import { RouteRecordRaw } from 'vue-router'
 import { useRepositoriesStore } from './piniaStores'
 import { AppStoreConfigSchema, AppStoreRepository } from './types'

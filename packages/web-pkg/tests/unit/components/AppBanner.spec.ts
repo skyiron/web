@@ -1,4 +1,4 @@
-import { defaultComponentMocks, defaultPlugins, shallowMount } from '@ownclouders/web-test-helpers'
+import { defaultComponentMocks, defaultPlugins, shallowMount } from '@opencloud-eu/web-test-helpers'
 import AppBanner from '../../../src/components/AppBanner.vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import { useLocalStorage, useSessionStorage } from '@vueuse/core'
@@ -76,7 +76,7 @@ function getWrapper({
                 currentTheme: {
                   appBanner: {
                     title: 'ownCloud',
-                    publisher: 'ownCloud GmbH',
+                    publisher: 'OpenCloud GmbH',
                     additionalInformation: '',
                     ctaText: 'OPEN',
                     icon: 'themes/owncloud/assets/owncloud-app-icon.png',

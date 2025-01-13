@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, unref } from 'vue'
-import { SideBarEventTopics, useEventBus, useSideBar } from '@ownclouders/web-pkg'
+import { SideBarEventTopics, useEventBus, useSideBar } from '@opencloud-eu/web-pkg'
 import { useGettext } from 'vue3-gettext'
 
 export default defineComponent({

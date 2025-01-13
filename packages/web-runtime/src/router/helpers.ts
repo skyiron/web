@@ -5,7 +5,7 @@ import {
   contextQueryToFileContextProps,
   queryItemAsString,
   WebRouteMeta
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 
 /**
  * Checks if the `to` route or the route it was reached from (i.e. the `contextRoute`) needs authentication from the IdP and a successfully fetched ownCloud user.

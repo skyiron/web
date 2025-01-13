@@ -1,10 +1,10 @@
 import { loadTheme } from '../../../src/helpers/theme'
 import defaultTheme from '../../../themes/owncloud/theme.json'
 import merge from 'lodash-es/merge'
-import { ThemingConfig, WebThemeConfig } from '@ownclouders/web-pkg'
+import { ThemingConfig, WebThemeConfig } from '@opencloud-eu/web-pkg'
 import { mock } from 'vitest-mock-extended'
 
-vi.mock('@ownclouders/web-pkg', async (importOriginal) => {
+vi.mock('@opencloud-eu/web-pkg', async (importOriginal) => {
   const actual = await importOriginal<any>()
   return {
     ...actual,

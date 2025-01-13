@@ -5,12 +5,12 @@
   "description": "ownCloud activities app",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "@ownclouders/web-test-helpers": "workspace:*"
+    "@opencloud-eu/web-test-helpers": "workspace:*"
   },
   "peerDependencies": {
-    "@ownclouders/design-system": "workspace:^",
-    "@ownclouders/web-client": "workspace:*",
-    "@ownclouders/web-pkg": "workspace:*",
+    "@opencloud-eu/design-system": "workspace:^",
+    "@opencloud-eu/web-client": "workspace:*",
+    "@opencloud-eu/web-pkg": "workspace:*",
     "pinia": "^2.2.2",
     "luxon": "^3.5.0",
     "vue-concurrency": "^5.0.1",

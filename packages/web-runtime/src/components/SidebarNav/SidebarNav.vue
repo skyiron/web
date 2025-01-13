@@ -69,7 +69,7 @@ import { v4 as uuidV4 } from 'uuid'
 import SidebarNavItem from './SidebarNavItem.vue'
 import { NavItem } from '../../helpers/navItems'
 import { getBackendVersion, getWebVersion } from '../../container/versions'
-import { useCapabilityStore } from '@ownclouders/web-pkg'
+import { useCapabilityStore } from '@opencloud-eu/web-pkg'
 
 type NavItemRef = InstanceType<typeof SidebarNavItem>
 

@@ -29,10 +29,10 @@ import {
   useLoadingService,
   useRoute,
   useRouteMeta
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import { OwnCloudServer, WebfingerDiscovery } from '../discovery'
 import { useGettext } from 'vue3-gettext'
-import { useAuthService } from '@ownclouders/web-pkg'
+import { useAuthService } from '@opencloud-eu/web-pkg'
 
 export default defineComponent({
   name: 'WebfingerResolve',

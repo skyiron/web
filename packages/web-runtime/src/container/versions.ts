@@ -1,4 +1,4 @@
-import { CapabilityStore } from '@ownclouders/web-pkg'
+import { CapabilityStore } from '@opencloud-eu/web-pkg'
 
 export const getWebVersion = (): string => {
   return `ownCloud Web UI ${process.env.PACKAGE_VERSION}`

@@ -10,16 +10,16 @@ import {
   Modal,
   OptionsConfig,
   WebThemeType
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import {
   CollaboratorShare,
   LinkShare,
   Resource,
   ShareRole,
   SpaceResource
-} from '@ownclouders/web-client'
-import { Group, User } from '@ownclouders/web-client/graph/generated'
-import { Capabilities } from '@ownclouders/web-client/ocs'
+} from '@opencloud-eu/web-client'
+import { Group, User } from '@opencloud-eu/web-client/graph/generated'
+import { Capabilities } from '@opencloud-eu/web-client/ocs'
 import defaultTheme from './theme.json'
 
 export { createTestingPinia }

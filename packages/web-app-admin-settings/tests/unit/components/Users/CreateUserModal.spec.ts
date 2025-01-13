@@ -4,11 +4,11 @@ import {
   defaultPlugins,
   mockAxiosReject,
   shallowMount
-} from '@ownclouders/web-test-helpers'
+} from '@opencloud-eu/web-test-helpers'
 import { mock } from 'vitest-mock-extended'
-import { Modal, eventBus, useMessages } from '@ownclouders/web-pkg'
+import { Modal, eventBus, useMessages } from '@opencloud-eu/web-pkg'
 import { useUserSettingsStore } from '../../../../src/composables/stores/userSettings'
-import { User } from '@ownclouders/web-client/graph/generated'
+import { User } from '@opencloud-eu/web-client/graph/generated'
 
 describe('CreateUserModal', () => {
   describe('computed method "isFormInvalid"', () => {

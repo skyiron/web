@@ -3,7 +3,7 @@ import {
   useFileActionsCopyPermanentLink,
   useFileActionsOpenShortcut,
   useFileActionsShowShares
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import {
   contextActionsExtensionPoint,
   defaultActionsExtensionPoint,

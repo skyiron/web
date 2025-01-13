@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { CustomComponentExtension, Extension } from '@ownclouders/web-pkg'
+import { CustomComponentExtension, Extension } from '@opencloud-eu/web-pkg'
 import SearchBar from './portals/SearchBar.vue'
 
 const searchBarExtension: CustomComponentExtension = {

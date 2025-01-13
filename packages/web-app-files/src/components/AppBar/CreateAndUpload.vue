@@ -195,15 +195,15 @@ import {
   useSharesStore,
   useSpacesStore,
   useUserStore
-} from '@ownclouders/web-pkg'
-import { useActiveLocation } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
+import { useActiveLocation } from '@opencloud-eu/web-pkg'
 import {
   useFileActionsCreateNewFile,
   useFileActionsCreateNewFolder,
   useFileActionsPaste,
   useRequest,
   useClientService
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 
 import ResourceUpload from './Upload/ResourceUpload.vue'
 
@@ -217,18 +217,18 @@ import {
   watch,
   ref
 } from 'vue'
-import { eventBus } from '@ownclouders/web-pkg'
+import { eventBus } from '@opencloud-eu/web-pkg'
 import {
   Resource,
   SpaceResource,
   isPublicSpaceResource,
   isShareSpaceResource
-} from '@ownclouders/web-client'
-import { useService, useUpload, UppyService, UploadResult } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-client'
+import { useService, useUpload, UppyService, UploadResult } from '@opencloud-eu/web-pkg'
 import { HandleUpload } from '../../HandleUpload'
 import { useGettext } from 'vue3-gettext'
-import { useExtensionRegistry } from '@ownclouders/web-pkg'
-import { Action, ResourceIcon } from '@ownclouders/web-pkg'
+import { useExtensionRegistry } from '@opencloud-eu/web-pkg'
+import { Action, ResourceIcon } from '@opencloud-eu/web-pkg'
 import { v4 as uuidV4 } from 'uuid'
 import { storeToRefs } from 'pinia'
 import { uploadMenuExtensionPoint } from '../../extensionPoints'

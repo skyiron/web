@@ -1,7 +1,7 @@
-import { useCapabilityStore } from '@ownclouders/web-pkg'
+import { useCapabilityStore } from '@opencloud-eu/web-pkg'
 import { getBackendVersion, getWebVersion } from '../../../src/container/versions'
-import { createTestingPinia } from '@ownclouders/web-test-helpers'
-import { Capabilities } from '@ownclouders/web-client/ocs'
+import { createTestingPinia } from '@opencloud-eu/web-test-helpers'
+import { Capabilities } from '@opencloud-eu/web-client/ocs'
 
 describe('collect version information', () => {
   describe('web version', () => {

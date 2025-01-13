@@ -1,4 +1,4 @@
-import { buildUrl, OpenIdConnectConfig } from '@ownclouders/web-pkg'
+import { buildUrl, OpenIdConnectConfig } from '@opencloud-eu/web-pkg'
 import { v4 as uuidV4 } from 'uuid'
 import { router } from '../router'
 

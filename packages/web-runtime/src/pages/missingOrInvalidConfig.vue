@@ -22,7 +22,7 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
-import { useThemeStore } from '@ownclouders/web-pkg'
+import { useThemeStore } from '@opencloud-eu/web-pkg'
 import { useHead } from '../composables/head'
 import { storeToRefs } from 'pinia'
 

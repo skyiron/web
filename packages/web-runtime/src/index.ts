@@ -1,6 +1,6 @@
 import { loadDesignSystem, pages, loadTranslations, supportedLanguages } from './defaults'
 import { router } from './router'
-import { PortalTarget } from '@ownclouders/web-pkg'
+import { PortalTarget } from '@opencloud-eu/web-pkg'
 import { createHead } from '@vueuse/head'
 import { abilitiesPlugin } from '@casl/vue'
 import { createMongoAbility } from '@casl/ability'
@@ -36,7 +36,7 @@ import {
   isPersonalSpaceResource,
   isPublicSpaceResource,
   PublicSpaceResource
-} from '@ownclouders/web-client'
+} from '@opencloud-eu/web-client'
 import { loadCustomTranslations } from './helpers/customTranslations'
 import { createApp, watch } from 'vue'
 import PortalVue, { createWormhole } from 'portal-vue'

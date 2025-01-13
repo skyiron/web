@@ -1,6 +1,6 @@
 import { OwnCloudServer } from './types'
-import { ClientService } from '@ownclouders/web-pkg'
-import { urlJoin } from '@ownclouders/web-client'
+import { ClientService } from '@opencloud-eu/web-pkg'
+import { urlJoin } from '@opencloud-eu/web-client'
 
 interface OwnCloudInstancesResponse {
   subject: string

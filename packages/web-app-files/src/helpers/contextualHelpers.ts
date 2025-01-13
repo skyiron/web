@@ -1,6 +1,6 @@
 import { omit } from 'lodash-es'
-import { ContextualHelperData } from '@ownclouders/design-system/helpers'
-import { ConfigStore } from '@ownclouders/web-pkg'
+import { ContextualHelperData } from '@opencloud-eu/design-system/helpers'
+import { ConfigStore } from '@opencloud-eu/web-pkg'
 
 // just a dummy function to trick gettext tools
 function $gettext(msg: string) {

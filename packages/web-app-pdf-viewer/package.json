@@ -5,10 +5,10 @@
   "description": "ownCloud web PDF viewer",
   "license": "AGPL-3.0",
   "devDependencies": {
-    "@ownclouders/web-test-helpers": "workspace:*"
+    "@opencloud-eu/web-test-helpers": "workspace:*"
   },
   "peerDependencies": {
-    "@ownclouders/web-pkg": "workspace:*",
+    "@opencloud-eu/web-pkg": "workspace:*",
     "vue3-gettext": "2.4.0"
   }
 }

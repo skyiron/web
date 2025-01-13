@@ -6,7 +6,7 @@ import {
   useFileActionsDelete,
   useExtensionRegistry,
   FolderViewExtension
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 
 import {
   defaultPlugins,
@@ -15,15 +15,15 @@ import {
   defaultStubs,
   RouteLocation,
   PiniaMockOptions
-} from '@ownclouders/web-test-helpers'
-import { AbilityRule, SpaceResource } from '@ownclouders/web-client'
+} from '@opencloud-eu/web-test-helpers'
+import { AbilityRule, SpaceResource } from '@opencloud-eu/web-client'
 import {
   folderViewsFavoritesExtensionPoint,
   folderViewsFolderExtensionPoint,
   folderViewsProjectSpacesExtensionPoint
 } from '../../../../src/extensionPoints'
 
-vi.mock('@ownclouders/web-pkg', async (importOriginal) => ({
+vi.mock('@opencloud-eu/web-pkg', async (importOriginal) => ({
   ...(await importOriginal<any>()),
   displayPositionedDropdown: vi.fn(),
   queryItemAsString: vi.fn(),

@@ -22,9 +22,9 @@ import {
   useCapabilityStore,
   useCanListShares,
   useCanListVersions
-} from '@ownclouders/web-pkg'
-import { isProjectSpaceResource, SpaceResource } from '@ownclouders/web-client'
-import { Resource } from '@ownclouders/web-client'
+} from '@opencloud-eu/web-pkg'
+import { isProjectSpaceResource, SpaceResource } from '@opencloud-eu/web-client'
+import { Resource } from '@opencloud-eu/web-client'
 import { useGettext } from 'vue3-gettext'
 import { unref } from 'vue'
 import { fileSideBarExtensionPoint } from '../../extensionPoints'

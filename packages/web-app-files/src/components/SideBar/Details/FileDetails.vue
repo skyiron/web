@@ -141,31 +141,31 @@ import {
   formatDateFromJSDate,
   useResourceContents,
   useLoadPreview
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import upperFirst from 'lodash-es/upperFirst'
 import {
   isShareResource,
   isShareSpaceResource,
   isTrashResource,
   ShareTypes
-} from '@ownclouders/web-client'
-import { useGetMatchingSpace } from '@ownclouders/web-pkg'
-import { getIndicators } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-client'
+import { useGetMatchingSpace } from '@opencloud-eu/web-pkg'
+import { getIndicators } from '@opencloud-eu/web-pkg'
 import {
   formatDateFromHTTP,
   formatFileSize,
   formatRelativeDateFromJSDate
-} from '@ownclouders/web-pkg'
-import { eventBus } from '@ownclouders/web-pkg'
-import { SideBarEventTopics } from '@ownclouders/web-pkg'
-import { Resource, SpaceResource } from '@ownclouders/web-client'
+} from '@opencloud-eu/web-pkg'
+import { eventBus } from '@opencloud-eu/web-pkg'
+import { SideBarEventTopics } from '@opencloud-eu/web-pkg'
+import { Resource, SpaceResource } from '@opencloud-eu/web-client'
 import { useGettext } from 'vue3-gettext'
-import { getSharedAncestorRoute } from '@ownclouders/web-pkg'
-import { ResourceIcon } from '@ownclouders/web-pkg'
+import { getSharedAncestorRoute } from '@opencloud-eu/web-pkg'
+import { ResourceIcon } from '@opencloud-eu/web-pkg'
 import { tagsHelper } from '../../../helpers/contextualHelpers'
-import { ContextualHelper } from '@ownclouders/design-system/helpers'
+import { ContextualHelper } from '@opencloud-eu/design-system/helpers'
 import TagsSelect from './TagsSelect.vue'
-import { WebDavDetails } from '@ownclouders/web-pkg'
+import { WebDavDetails } from '@opencloud-eu/web-pkg'
 
 export default defineComponent({
   name: 'FileDetails',

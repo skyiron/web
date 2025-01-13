@@ -14,9 +14,9 @@ import {
   useMessages,
   useRouter,
   useSpacesStore
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import { unref } from 'vue'
-import { extractNameWithoutExtension, Resource } from '@ownclouders/web-client'
+import { extractNameWithoutExtension, Resource } from '@opencloud-eu/web-client'
 import { useCreateFileHandler } from '../composables'
 import { useGettext } from 'vue3-gettext'
 

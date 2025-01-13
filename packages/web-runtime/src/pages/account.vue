@@ -296,19 +296,19 @@ import {
   useResourcesStore,
   useSpacesStore,
   useUserStore
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import { useTask } from 'vue-concurrency'
 import { useGettext } from 'vue3-gettext'
 import { setCurrentLanguage, loadAppTranslations } from '../helpers/language'
 import GdprExport from '../components/Account/GdprExport.vue'
 import ThemeSwitcher from '../components/Account/ThemeSwitcher.vue'
 import ExtensionPreference from '../components/Account/ExtensionPreference.vue'
-import { AppLoadingSpinner } from '@ownclouders/web-pkg'
-import { SSEAdapter } from '@ownclouders/web-client/sse'
+import { AppLoadingSpinner } from '@opencloud-eu/web-pkg'
+import { SSEAdapter } from '@opencloud-eu/web-client/sse'
 import { supportedLanguages } from '../defaults'
-import { User } from '@ownclouders/web-client/graph/generated'
+import { User } from '@opencloud-eu/web-client/graph/generated'
 import { isEmpty } from 'lodash-es'
-import { call } from '@ownclouders/web-client'
+import { call } from '@opencloud-eu/web-client'
 import QuotaInformation from '../components/Account/QuotaInformation.vue'
 import AccountTable from '../components/Account/AccountTable.vue'
 import { useNotificationsSettings } from '../composables/notificationsSettings'
@@ -424,7 +424,7 @@ export default defineComponent({
             { signal }
           )
         )
-        accountBundle.value = bundles?.find((b) => b.extension === 'ocis-accounts')
+        accountBundle.value = bundles?.find((b) => b.extension === 'opencloud-accounts')
       } catch (e) {
         console.error(e)
         showErrorMessage({

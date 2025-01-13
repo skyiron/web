@@ -4,10 +4,10 @@ import {
   defaultPlugins,
   mockAxiosReject,
   shallowMount
-} from '@ownclouders/web-test-helpers'
+} from '@opencloud-eu/web-test-helpers'
 import { mock } from 'vitest-mock-extended'
-import { Drive, Group, User } from '@ownclouders/web-client/graph/generated'
-import { CapabilityStore } from '@ownclouders/web-pkg'
+import { Drive, Group, User } from '@opencloud-eu/web-client/graph/generated'
+import { CapabilityStore } from '@opencloud-eu/web-pkg'
 import GroupSelect from '../../../../../src/components/Users/GroupSelect.vue'
 
 const availableGroupOptions = [

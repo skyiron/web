@@ -1,15 +1,15 @@
 {
-  "name": "@ownclouders/web-client",
+  "name": "@opencloud-eu/web-client",
   "version": "11.0.6",
-  "description": "ownCloud web client",
+  "description": "OpenCloud web client",
   "license": "AGPL-3.0",
   "private": false,
   "type": "module",
-  "author": "ownCloud GmbH <devops@owncloud.com>",
-  "homepage": "https://github.com/owncloud/web/tree/master/packages/web-client",
+  "author": "OpenCloud GmbH <info@opencloud.eu>",
+  "homepage": "https://github.com/opencloud-eu/web/tree/main/packages/web-client",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owncloud/web",
+    "url": "https://github.com/opencloud-eu/web",
     "directory": "packages/web-client"
   },
   "files": [

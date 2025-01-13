@@ -1,7 +1,7 @@
 import { PasswordPolicyService } from '../../../src/services'
-import { createTestingPinia } from '@ownclouders/web-test-helpers'
+import { createTestingPinia } from '@opencloud-eu/web-test-helpers'
 import { Language } from 'vue3-gettext'
-import { PasswordPolicyCapability } from '@ownclouders/web-client/ocs'
+import { PasswordPolicyCapability } from '@opencloud-eu/web-client/ocs'
 import { useCapabilityStore } from '../../../src/composables/piniaStores'
 import { describe } from 'vitest'
 

@@ -24,20 +24,20 @@ import {
   useRouteParam,
   useRouteQuery,
   useRouter
-} from '@ownclouders/web-pkg'
-import { useActiveLocation } from '@ownclouders/web-pkg'
-import { createLocationSpaces, isLocationTrashActive } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
+import { useActiveLocation } from '@opencloud-eu/web-pkg'
+import { createLocationSpaces, isLocationTrashActive } from '@opencloud-eu/web-pkg'
 import {
   isPublicSpaceResource,
   PublicSpaceResource,
   SharePermissionBit,
   SpaceResource
-} from '@ownclouders/web-client'
-import { locationPublicUpload } from '@ownclouders/web-pkg'
-import { createFileRouteOptions } from '@ownclouders/web-pkg'
-import { AppLoadingSpinner } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-client'
+import { locationPublicUpload } from '@opencloud-eu/web-pkg'
+import { createFileRouteOptions } from '@opencloud-eu/web-pkg'
+import { AppLoadingSpinner } from '@opencloud-eu/web-pkg'
 import { dirname } from 'path'
-import { AppBanner } from '@ownclouders/web-pkg'
+import { AppBanner } from '@opencloud-eu/web-pkg'
 
 export default defineComponent({
   components: {

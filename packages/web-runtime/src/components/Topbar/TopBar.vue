@@ -53,7 +53,7 @@ import {
   useOpenEmptyEditor,
   useRouter,
   useThemeStore
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import { isRuntimeRoute } from '../../router'
 import { appMenuExtensionPoint, topBarCenterExtensionPoint } from '../../extensionPoints'
 

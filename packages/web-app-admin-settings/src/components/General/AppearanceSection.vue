@@ -44,7 +44,7 @@
 
 <script lang="ts">
 import { defineComponent, computed, unref, VNodeRef, ref } from 'vue'
-import { ContextActionMenu, useThemeStore } from '@ownclouders/web-pkg'
+import { ContextActionMenu, useThemeStore } from '@opencloud-eu/web-pkg'
 import {
   useGeneralActionsResetLogo,
   useGeneralActionsUploadLogo

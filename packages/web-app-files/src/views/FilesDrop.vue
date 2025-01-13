@@ -56,7 +56,7 @@ import {
   useThemeStore,
   useUserStore,
   useResourcesStore
-} from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
 import ResourceUpload from '../components/AppBar/Upload/ResourceUpload.vue'
 import {
   computed,
@@ -77,13 +77,13 @@ import {
   useRouteQuery,
   queryItemAsString,
   useUpload
-} from '@ownclouders/web-pkg'
-import { eventBus } from '@ownclouders/web-pkg'
-import { useService, UppyService } from '@ownclouders/web-pkg'
-import { useAuthService } from '@ownclouders/web-pkg'
+} from '@opencloud-eu/web-pkg'
+import { eventBus } from '@opencloud-eu/web-pkg'
+import { useService, UppyService } from '@opencloud-eu/web-pkg'
+import { useAuthService } from '@opencloud-eu/web-pkg'
 import { HandleUpload } from '../HandleUpload'
-import { createFileRouteOptions } from '@ownclouders/web-pkg'
-import { PublicSpaceResource, SharePermissionBit } from '@ownclouders/web-client'
+import { createFileRouteOptions } from '@opencloud-eu/web-pkg'
+import { PublicSpaceResource, SharePermissionBit } from '@opencloud-eu/web-client'
 
 export default defineComponent({
   components: {

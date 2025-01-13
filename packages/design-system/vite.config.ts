@@ -49,7 +49,7 @@ export default defineConfig({
     vue(),
     dts({ exclude: ['**/tests', '**/*.spec.ts'] }),
     {
-      name: '@ownclouders/vite-plugin-docs',
+      name: '@opencloud-eu/vite-plugin-docs',
       transform(src, id) {
         if (id.includes('type=docs')) {
           return {

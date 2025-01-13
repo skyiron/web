@@ -99,7 +99,7 @@ import {
   useResourcesStore
 } from '../composables'
 import ResourceListItem from './FilesList/ResourceListItem.vue'
-import { isPublicSpaceResource, Resource } from '@ownclouders/web-client'
+import { isPublicSpaceResource, Resource } from '@opencloud-eu/web-client'
 import { Duration } from 'luxon'
 
 export default defineComponent({

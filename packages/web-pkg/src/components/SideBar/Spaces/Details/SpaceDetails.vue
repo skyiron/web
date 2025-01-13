@@ -82,7 +82,7 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia'
 import { defineComponent, inject, ref, Ref, computed, unref, watch } from 'vue'
-import { buildSpaceImageResource, getSpaceManagers, SpaceResource } from '@ownclouders/web-client'
+import { buildSpaceImageResource, getSpaceManagers, SpaceResource } from '@opencloud-eu/web-client'
 import {
   useUserStore,
   useSharesStore,

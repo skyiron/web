@@ -1,4 +1,4 @@
-import { FolderViewExtension, ResourceTable, ResourceTiles } from '@ownclouders/web-pkg'
+import { FolderViewExtension, ResourceTable, ResourceTiles } from '@opencloud-eu/web-pkg'
 import { useGettext } from 'vue3-gettext'
 import {
   folderViewsFavoritesExtensionPoint,

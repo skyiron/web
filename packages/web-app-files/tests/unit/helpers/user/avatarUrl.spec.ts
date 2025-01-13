@@ -1,6 +1,6 @@
 import { avatarUrl } from '../../../../src/helpers/user'
-import { ImageDimension } from '@ownclouders/web-pkg'
-import { ClientService } from '@ownclouders/web-pkg'
+import { ImageDimension } from '@opencloud-eu/web-pkg'
+import { ClientService } from '@opencloud-eu/web-pkg'
 import { mockDeep } from 'vitest-mock-extended'
 import { AxiosResponse } from 'axios'
 
