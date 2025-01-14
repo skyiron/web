@@ -41,7 +41,7 @@ The most important configuration options are:
 - `handler` - The action to perform upon click. The nav item will be a `<button>` tag.
 - `isVisible` - Determines whether the action is displayed to the user
 
-Please check the [`Action` type](https://github.com/owncloud/web/blob/236c185540fc6758dc7bd84985c8834fa4145530/packages/web-pkg/src/composables/actions/types.ts#L6) for a full list of configuration options.
+Please check the [`Action` type](https://github.com/opencloud-eu/web/blob/236c185540fc6758dc7bd84985c8834fa4145530/packages/web-pkg/src/composables/actions/types.ts#L6) for a full list of configuration options.
 
 ### Example
 

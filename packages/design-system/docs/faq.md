@@ -16,11 +16,11 @@ The development environment supports the following browsers. To tweak browsers s
 
 ## How do I get started?
 
-See the [Getting Started guide](https://github.com/owncloud/owncloud-design-system/wiki/getting-started) on GitHub.
+See the [Getting Started guide](https://github.com/opencloud-eu/web/blob/main/packages/design-system/docs/getting-started.md) on GitHub.
 
 ## I want to use this in existing Vue project, is that possible?
 
-Definitely possible, see instructions in [Getting Started guide](https://github.com/owncloud/owncloud-design-system/wiki/getting-started#using-vue-design-system-in-an-existing-project).
+Definitely possible, see instructions in [Getting Started guide](https://github.com/opencloud-eu/web/blob/main/packages/design-system/docs/getting-started.md).
 
 ## Why Vue and not React, Jekyll, or some other tool?
 
@@ -40,7 +40,7 @@ Definitely. See [style-dictionary’s docs](https://github.com/amzn/style-dictio
 
 ## Does OpenCloud Design System work on Windows?
 
-Yes, follow the [getting started guide](https://github.com/owncloud/owncloud-design-system/wiki/getting-started) to get things up and running.
+Yes, follow the [getting started guide](https://github.com/opencloud-eu/web/blob/main/packages/design-system/docs/getting-started.md) to get things up and running.
 
 ## Any plan to support different component states?
 
@@ -109,11 +109,11 @@ Yes! While we don’t currently have extensive documentation on this, there’s 
 
 ## I can’t get OpenCloud Design System working as an NPM dependency?
 
-Please see the official example first: [github.com/viljamis/vue-design-system-example](https://github.com/owncloud/owncloud-design-system-example). If you’re getting an error about `export 'default' was not found` you’re probably trying to import the provided UMD module as an ES Module.
+Please see the official example first: [github.com/viljamis/vue-design-system-example](github.com/viljamis/vue-design-system-example-website). If you’re getting an error about `export 'default' was not found` you’re probably trying to import the provided UMD module as an ES Module.
 
 ## Can I use the components from the system on our static website?
 
-Yes you can. See the official example on GitHub: [github.com/viljamis/vue-design-system-example-website](https://github.com/owncloud/owncloud-design-system-example-website)
+Yes you can. See the official example on GitHub: [github.com/viljamis/vue-design-system-example-website](github.com/viljamis/vue-design-system-example-website)
 
 ## I want to use CSS Modules, are those supported?
 

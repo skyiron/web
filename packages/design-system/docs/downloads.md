@@ -4,5 +4,4 @@ You’re looking at OpenCloud Design System’s demo downloads section. Everythi
 
 ## OpenCloud Design System (zip)
 
-- [Download latest version](https://github.com/owncloud/owncloud-design-system/archive/master.zip)
-- [All versions](https://github.com/owncloud/owncloud-design-system/releases)
+- [All versions](https://github.com/opencloud-eu/web/releases?q=design-system&expanded=true)

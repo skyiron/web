@@ -228,8 +228,8 @@ export const useFileActionsRename = () => {
           return false
         }
 
-        // FIXME: Remove this check as soon as renaming shares works as expected
-        // see https://github.com/owncloud/ocis/issues/4866
+        // FIXME: Remove this check as soon as renaming shares works as expected.
+        // Might be the case? Needs to be retested.
         const rootShareIncluded = configStore.options.routing.fullShareOwnerPaths
           ? resources.some((r) => r.remoteItemPath && r.path)
           : resources.some((r) => r.remoteItemId && r.path === '/')

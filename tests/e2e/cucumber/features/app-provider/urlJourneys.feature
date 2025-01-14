@@ -4,7 +4,7 @@ Feature: url stability for mobile and desktop client
   To make sure that the file can be opened from the mobile and desktop client
   # To run this feature we need to run the external app-provider service along with wopi, OnlyOffice, Collabora services
   # This is a minimal test for the integration of OpenCloud with different online office suites like Collabora and OnlyOffice
-  # Check that the file can be opened in collabora or onlyoffice using the url. https://github.com/owncloud/web/issues/9897
+  # Check that the file can be opened in collabora or onlyoffice using the url.
 
 
   Scenario: open office suite files with Collabora and onlyOffice
@@ -13,8 +13,8 @@ Feature: url stability for mobile and desktop client
       | Alice |
     And "Alice" logs in
     And "Alice" creates the following files into personal space using API
-      | pathToFile          | content                 |
-      | OpenDocument.odt    | OpenDocument Content    |
+      | pathToFile       | content              |
+      | OpenDocument.odt | OpenDocument Content |
     And "Alice" creates the following resources
       | resource           | type           | content                |
       | MicrosoftWord.docx | Microsoft Word | Microsoft Word Content |

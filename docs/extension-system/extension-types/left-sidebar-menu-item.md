@@ -40,7 +40,7 @@ The most important configuration options are:
 - `route` - The string/route to navigate to, if the nav item should be a `<router-link>` (Mutually exclusive with `handler`)
 - `handler` - The action to perform upon click, if the nav item should be a `<button>` (Mutually exclusive with `route`)
 
-Please check the [`AppNavigationItem` type](https://github.com/owncloud/web/blob/f069ce44919cde5d112c68a519d433e015a4a011/packages/web-pkg/src/apps/types.ts#L14) for a full list of configuration options.
+Please check the [`AppNavigationItem` type](https://github.com/opencloud-eu/web/blob/f069ce44919cde5d112c68a519d433e015a4a011/packages/web-pkg/src/apps/types.ts#L14) for a full list of configuration options.
 
 ### Example
 
