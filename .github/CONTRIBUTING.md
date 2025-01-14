@@ -24,7 +24,7 @@ In order to constantly increase the quality of our software we can no longer acc
 We have the goal that code segments are unit tested. Please try to help us with that goal. In some areas unit testing is hard 
 (aka almost impossible) as of today - in these areas refactoring WHILE fixing a bug is encouraged to enable unit testing.
 
-[devmanual]: https://opencloud.dev/clients/web/
+[devmanual]: https://docs.opencloud.eu/clients/web/
 
 ## Translations
 Please submit translations via [Transifex][transifex].

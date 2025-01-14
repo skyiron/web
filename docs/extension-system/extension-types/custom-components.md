@@ -2,7 +2,7 @@
 title: 'Custom component extensions'
 date: 2024-02-14T00:00:00+00:00
 weight: 60
-geekdocRepo: https://github.com/owncloud/web
+geekdocRepo: https://github.com/opencloud-eu/web
 geekdocEditPath: edit/master/docs/extension-system/extension-types
 geekdocFilePath: custom-components.md
 geekdocCollapseSection: true

@@ -4,7 +4,7 @@ _extends: gh-labels
 repository:
   name: web
   description: 'Web UI for OpenCloud built with Vue.js and TypeScript'
-  homepage: https://owncloud.dev/clients/web/
+  homepage: https://opencloud.eu
   has_wiki: false
 
 labels:

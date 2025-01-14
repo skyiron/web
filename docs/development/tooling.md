@@ -2,7 +2,7 @@
 title: 'Tooling'
 date: 2022-01-28T00:00:00+00:00
 weight: 40
-geekdocRepo: https://github.com/owncloud/web
+geekdocRepo: https://github.com/opencloud-eu/web
 geekdocEditPath: edit/master/docs/development
 geekdocFilePath: tooling.md
 ---
@@ -30,7 +30,7 @@ After cloning the source code, install the dependencies via `pnpm install`.
 
 ### Starting the Server
 
-You can start the server by running `docker-compose up ocis`.
+You can start the server by running `docker-compose up opencloud`.
 
 Note that the container needs a short while to start because it is waiting for `tika` to be initialized. This is the case as soon as the `tika-service` container has stopped running.
 

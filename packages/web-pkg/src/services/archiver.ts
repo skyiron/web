@@ -114,9 +114,7 @@ export class ArchiverService {
         queryParams.push(...options.fileIds.map((id) => `id=${id}`))
         return this.url + '?' + queryParams.join('&')
       }
-      case 1: {
-        // see https://github.com/owncloud/core/blob/e285879a8a79e692497937ebf340bc6b9c925b4f/apps/files/js/files.js#L315 for reference
-        // classic ui does a check whether the download started. not implemented here (yet?).
+      case 1: {.
         const downloadStartSecret = Math.random().toString(36).substring(2)
         queryParams.push(
           `dir=${encodeURIComponent(options.dir)}`,

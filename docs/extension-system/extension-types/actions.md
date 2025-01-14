@@ -2,7 +2,7 @@
 title: 'Action extensions'
 date: 2024-01-23T00:00:00+00:00
 weight: 60
-geekdocRepo: https://github.com/owncloud/web
+geekdocRepo: https://github.com/opencloud-eu/web
 geekdocEditPath: edit/master/docs/extension-system/extension-types
 geekdocFilePath: actions.md
 geekdocCollapseSection: true
@@ -45,7 +45,7 @@ Please check the [`Action` type](https://github.com/owncloud/web/blob/236c185540
 
 ### Example
 
-The following example shows how an action extension for downloading files could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/owncloud/web/tree/master/packages/web-pkg) package.
+The following example shows how an action extension for downloading files could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/master/packages/web-pkg) package.
 
 ```typescript
 export const useDownloadFilesExtension = () => {

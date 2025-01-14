@@ -3,13 +3,13 @@ import { TokenEnvironmentFactory } from '../../environment'
 import { config } from '../../../config'
 import { User } from '../../types'
 
-interface ocisTokenForKeycloak {
+interface openCloudTokenForKeycloak {
   access_token: string
   refresh_token: string
 }
 
-const authorizationEndpoint = config.keycloakUrl + '/realms/oCIS/protocol/openid-connect/auth'
-const tokenEndpoint = config.keycloakUrl + '/realms/oCIS/protocol/openid-connect/token'
+const authorizationEndpoint = config.keycloakUrl + '/realms/openCloud/protocol/openid-connect/auth'
+const tokenEndpoint = config.keycloakUrl + '/realms/openCloud/protocol/openid-connect/token'
 const redirectUrl = config.baseUrl + '/oidc-callback.html'
 
 async function getAuthorizationEndPoint() {
@@ -103,11 +103,11 @@ const getToken = async (authorizationCode: string) => {
   return tokenResponse
 }
 
-export const setAccessTokenForKeycloakOcisUser = async (user: User) => {
+export const setAccessTokenForKeycloakOpenCloudUser = async (user: User) => {
   const [auhorizationUrl, cookies] = await getAuthorizationEndPoint()
   const authorizationCode = await getCode({ user, auhorizationUrl, cookies })
   const tokenResponse = await getToken(authorizationCode)
-  const token = (await tokenResponse.json()) as ocisTokenForKeycloak
+  const token = (await tokenResponse.json()) as openCloudTokenForKeycloak
 
   const tokenEnvironment = TokenEnvironmentFactory()
   tokenEnvironment.setToken({
@@ -120,7 +120,7 @@ export const setAccessTokenForKeycloakOcisUser = async (user: User) => {
   })
 }
 
-export const refreshAccessTokenForKeycloakOcisUser = async (user: User) => {
+export const refreshAccessTokenForKeycloakOpenCloudUser = async (user: User) => {
   const tokenEnvironment = TokenEnvironmentFactory()
   const refreshToken = tokenEnvironment.getToken({ user }).refreshToken
   const tokenResponse = await fetch(tokenEndpoint, {
@@ -137,7 +137,7 @@ export const refreshAccessTokenForKeycloakOcisUser = async (user: User) => {
     )
   }
 
-  const token = (await tokenResponse.json()) as ocisTokenForKeycloak
+  const token = (await tokenResponse.json()) as openCloudTokenForKeycloak
   tokenEnvironment.setToken({
     user: { ...user },
     token: {

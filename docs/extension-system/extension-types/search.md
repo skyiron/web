@@ -2,7 +2,7 @@
 title: 'Search extensions'
 date: 2024-01-23T00:00:00+00:00
 weight: 60
-geekdocRepo: https://github.com/owncloud/web
+geekdocRepo: https://github.com/opencloud-eu/web
 geekdocEditPath: edit/master/docs/extension-system/extension-types
 geekdocFilePath: search.md
 geekdocCollapseSection: true
@@ -59,7 +59,7 @@ The previewSearch object extends the listSearch with one additional attribute:
 
 ## Example
 
-The following example shows how a search extension that queries a Solr search engine could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/owncloud/web/tree/master/packages/web-pkg) and the [web-client](https://github.com/owncloud/web/tree/master/packages/web-client) packages.
+The following example shows how a search extension that queries a Solr search engine could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) and the [web-client](https://github.com/opencloud-eu/web/tree/main/packages/web-client) packages.
 
 ```typescript
 export const useSolrSearchExtension = () => {

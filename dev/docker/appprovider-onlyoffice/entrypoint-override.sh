@@ -9,7 +9,7 @@ retries=10
 while [[ $retries -gt 0 ]]; do
     if curl --silent --show-error --fail http://onlyoffice/hosting/discovery > /dev/null; then
         echo "OnlyOffice is available !!"
-        ocis app-provider server
+        opencloud app-provider server
     else
         echo "OnlyOffice is not yet available, trying again in 10 seconds"
         sleep 10

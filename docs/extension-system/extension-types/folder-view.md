@@ -2,7 +2,7 @@
 title: 'Folder View extensions'
 date: 2024-01-23T00:00:00+00:00
 weight: 60
-geekdocRepo: https://github.com/owncloud/web
+geekdocRepo: https://github.com/opencloud-eu/web
 geekdocEditPath: edit/master/docs/extension-system/extension-types
 geekdocFilePath: folder-view.md
 geekdocCollapseSection: true
@@ -40,7 +40,7 @@ For the folderView object, you have the following configuration options:
 
 ### Example
 
-The following example shows how an extension for a custom folder view could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/owncloud/web/tree/master/packages/web-pkg) package.
+The following example shows how an extension for a custom folder view could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) package.
 
 ```typescript
 export const useCustomFolderViewExtension = () => {

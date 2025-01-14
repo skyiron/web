@@ -1,7 +1,7 @@
 {
-  "id": "ownCloud Infinite Scale Test",
-  "realm": "oCIS",
-  "displayName": "ownCloud Infinite Scale",
+  "id": "OpenCloud Test",
+  "realm": "openCloud",
+  "displayName": "OpenCloud",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -49,11 +49,11 @@
     "realm": [
       {
         "id": "0bb40fa2-4490-4687-9159-b1d27ec7423a",
-        "name": "ocisAdmin",
+        "name": "openCloudAdmin",
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
@@ -62,25 +62,25 @@
         "description": "${role_uma_authorization}",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
         "id": "8c79ff81-c256-48fd-b0b9-795c7941eedf",
-        "name": "ocisUser",
+        "name": "openCloudUser",
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
         "id": "bd5f5012-48bb-4ea4-bfe6-0623e3ca0552",
-        "name": "ocisSpaceAdmin",
+        "name": "openCloudSpaceAdmin",
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
@@ -89,12 +89,12 @@
         "description": "${role_offline-access}",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
         "id": "82e13ea7-aac4-4d2c-9fc7-cff8333dbe19",
-        "name": "default-roles-ocis",
+        "name": "default-roles-open-cloud",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -110,16 +110,16 @@
           }
         },
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       },
       {
         "id": "7eedfa6d-a2d9-4296-b6db-e75e4e9c0963",
-        "name": "ocisGuest",
+        "name": "openCloudGuest",
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "ownCloud Infinite Scale Test",
+        "containerId": "OpenCloud Infinite Scale Test",
         "attributes": {}
       }
     ],
@@ -463,11 +463,11 @@
   ],
   "defaultRole": {
     "id": "82e13ea7-aac4-4d2c-9fc7-cff8333dbe19",
-    "name": "default-roles-ocis",
+    "name": "default-roles-open-cloud",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
-    "containerId": "ownCloud Infinite Scale Test"
+    "containerId": "OpenCloud Infinite Scale Test"
   },
   "requiredCredentials": [
     "password"
@@ -535,7 +535,7 @@
       "requiredActions": [],
       "realmRoles": [
         "uma_authorization",
-        "ocisAdmin",
+        "openCloudAdmin",
         "offline_access"
       ],
       "clientRoles": {
@@ -561,10 +561,10 @@
     {
       "clientScope": "roles",
       "roles": [
-        "ocisSpaceAdmin",
-        "ocisGuest",
-        "ocisUser",
-        "ocisAdmin"
+        "openCloudSpaceAdmin",
+        "openCloudGuest",
+        "openCloudUser",
+        "openCloudAdmin"
       ]
     }
   ],
@@ -585,13 +585,13 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/oCIS/account/",
+      "baseUrl": "/realms/openCloud/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/oCIS/account/*"
+        "/realms/openCloud/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -620,13 +620,13 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/oCIS/account/",
+      "baseUrl": "/realms/openCloud/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/oCIS/account/*"
+        "/realms/openCloud/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -769,13 +769,13 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/oCIS/console/",
+      "baseUrl": "/admin/openCloud/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/admin/oCIS/console/*"
+        "/admin/openCloud/console/*"
       ],
       "webOrigins": [
         "+"
@@ -824,18 +824,18 @@
       "clientId": "web",
       "name": "",
       "description": "",
-      "rootUrl": "https://ocis:9200",
-      "adminUrl": "https://ocis:9200",
+      "rootUrl": "https://opencloud:9200",
+      "adminUrl": "https://opencloud:9200",
       "baseUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "https://ocis:9200/*"
+        "https://opencloud:9200/*"
       ],
       "webOrigins": [
-        "https://ocis:9200"
+        "https://opencloud:9200"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -859,7 +859,7 @@
         "saml.server.signature.keyinfo.ext": "false",
         "exclude.session.state.from.auth.response": "false",
         "oidc.ciba.grant.enabled": "false",
-        "backchannel.logout.url": "https://ocis:9200/backchannel_logout",
+        "backchannel.logout.url": "https://opencloud:9200/backchannel_logout",
         "backchannel.logout.session.required": "true",
         "client_credentials.use_refresh_token": "false",
         "saml_force_name_id_format": "false",

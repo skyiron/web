@@ -1,7 +1,7 @@
 @ocm
 Feature: federation management
   As a user
-  I want to establish connection between multiple oCIS instance
+  I want to establish connection between multiple OpenCloud instance
   So that I share resource
 
   Scenario: user creates a federated share
