@@ -49,11 +49,11 @@ Depending on the backend you are using, there are sample config files provided i
 - `options.accountEditLink` This accepts an object with the following optional fields to have a link on the account page:
     - `options.accountEditLink.href` Set a different target URL for the edit link. Make sure to prepend it with `http(s)://`.
 - `options.disableFeedbackLink` Set this option to `true` to disable the feedback link in the topbar. Keeping it enabled (value `false` or absence of the option)
-  allows ownCloud to get feedback from your user base through a dedicated survey website.
+  allows OpenCloud to get feedback from your user base through a dedicated survey website.
 - `options.feedbackLink` This accepts an object with the following optional fields to customize the feedback link in the topbar:
-    - `options.feedbackLink.href` Set a different target URL for the feedback link. Make sure to prepend it with `http(s)://`. Defaults to `https://owncloud.com/web-design-feedback`.
-    - `options.feedbackLink.ariaLabel` Since the link only has an icon, you can set an e.g. screen reader accessible label. Defaults to `ownCloud feedback survey`.
-    - `options.feedbackLink.description` Provide any description you want to see as tooltip and as accessible description. Defaults to `Provide your feedback: We'd like to improve the web design and would be happy to hear your feedback. Thank you! Your ownCloud team.`
+    - `options.feedbackLink.href` Set a different target URL for the feedback link. Make sure to prepend it with `http(s)://`. Defaults to `https://opencloud.eu/web-design-feedback`.
+    - `options.feedbackLink.ariaLabel` Since the link only has an icon, you can set an e.g. screen reader accessible label. Defaults to `OpenCloud feedback survey`.
+    - `options.feedbackLink.description` Provide any description you want to see as tooltip and as accessible description. Defaults to `Provide your feedback: We'd like to improve the web design and would be happy to hear your feedback. Thank you! Your OpenCloud team.`
 - `options.sharingRecipientsPerPage` Sets the amount of users shown as recipients in the dropdown when sharing resources. Default amount is 200.
 - `options.runningOnEos` Set this option to `true` if running on an [EOS storage backend](https://eos-web.web.cern.ch/eos-web/) to enable its specific features. Defaults to `false`, and we recommend reaching out to [the OpenCloud Web team](https://talk.owncloud.com/channel/web) if you're not CERN and thinking about enabling this feature flag.
 - `options.cernFeatures` Enabling this will activate CERN-specific features. Defaults to `false`.

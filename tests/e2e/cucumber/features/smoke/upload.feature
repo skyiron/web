@@ -1,7 +1,7 @@
 Feature: Upload
   As a user
   I want to upload resources
-  So that I can store them in owncloud
+  So that I can store them in OpenCloud
 
   Background:
     Given "Admin" logs in

@@ -54,7 +54,7 @@ Feature: groups management
     When "Admin" logs in
     And "Admin" opens the "admin-settings" app
     And "Admin" navigates to the groups management page
-    # Renaming a Keycloak group results in the creation of a new group on the oCIS server.
+    # Renaming a Keycloak group results in the creation of a new group on the OpenCloud server.
     # After renaming a group, it may take up to 5 minutes for the changes to sync, so avoid using the renamed group in the subsequent steps.
     And "Admin" changes displayName to "a renamed group" for group "keycloak finance" using the sidebar panel
 

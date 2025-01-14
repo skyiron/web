@@ -330,7 +330,7 @@ Then the user should see an error message
 ```
 
 ## Broad Gherkin Guidelines
-This [OpenCloud developer manual](https://docs.opencloud.eu/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the ownCloud testing framework.
+This [OpenCloud developer manual](https://docs.opencloud.eu/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the OpenCloud testing framework.
 
 In OpenCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and usability when test standards are consistent across repositories. For example:
 

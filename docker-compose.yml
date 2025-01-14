@@ -140,7 +140,7 @@ services:
       - ${OC_WEB_CONFIG:-./dev/docker/opencloud.web-federated.config.json}:/web/config.json:ro
 
   collaboration:
-    image: ${OC_IMAGE:-owncloud/opencloud-rolling:master}
+    image: ${OC_IMAGE:-opencloud-eu/opencloud-rolling:master}
     depends_on:
       opencloud:
         condition: service_started
@@ -201,7 +201,7 @@ services:
       - traefik
 
   collaboration-oo:
-    image: ${OC_IMAGE:-owncloud/opencloud-rolling:master}
+    image: ${OC_IMAGE:-opencloud-eu/opencloud-rolling:master}
     depends_on:
       opencloud:
         condition: service_started
@@ -322,7 +322,7 @@ services:
       - '/var/run/docker.sock:/var/run/docker.sock:ro'
 
   tika-service:
-    image: owncloudci/wait-for:latest
+    image: opencloud-eu/wait-for:latest
     container_name: web_tika_service
     depends_on:
       - tika
