@@ -3,7 +3,7 @@
   "private": true,
   "homepage": "https://github.com/opencloud-eu/web",
   "license": "AGPL-3.0",
-  "author": "OpenCloud GmbH <info@opencloud-eu>",
+  "author": "OpenCloud GmbH <info@opencloud.eu>",
   "type": "module",
   "scripts": {
     "build": "vue-demi-fix && pnpm build:tokens && pnpm vite build",
