@@ -114,7 +114,7 @@ export class ArchiverService {
         queryParams.push(...options.fileIds.map((id) => `id=${id}`))
         return this.url + '?' + queryParams.join('&')
       }
-      case 1: {.
+      case 1: {
         const downloadStartSecret = Math.random().toString(36).substring(2)
         queryParams.push(
           `dir=${encodeURIComponent(options.dir)}`,

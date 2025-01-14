@@ -283,8 +283,8 @@ services:
       - '--providers.docker=true'
       - '--providers.docker.exposedbydefault=false'
       - '--entrypoints.web.address=:80'
-      - '--entrypoints.ocis.address=:9200'
-      - '--entrypoints.ocis-federated.address=:10200'
+      - '--entrypoints.opencloud.address=:9200'
+      - '--entrypoints.opencloud-federated.address=:10200'
       - '--entrypoints.collabora.address=:9980'
       - '--entrypoints.wopi.address=:8880'
       - '--entrypoints.collaboration.address=:9300'
@@ -338,8 +338,8 @@ services:
 
 volumes:
   uploads:
-  ocis-config:
-  ocis-federated-config:
+  opencloud-config:
+  opencloud-federated-config:
 
 networks:
   traefik:

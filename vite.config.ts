@@ -311,7 +311,7 @@ export default defineConfig(({ mode, command }) => {
               if (bundle) {
                 moduleNames = Object.keys(bundle)
                 // We are in production mode here and need to provide paths relative to the module that contains the import, i.e. web-runtime-*.mjs
-                // so it works when oC Web is hosted in a sub folder, e.g. when using the oC 10 integration app
+                // so it works when OpenCloud Web is hosted in a sub folder
                 buildModulePath = (moduleName: string) => moduleName.replace('js/', './')
               } else {
                 // We are in development mode here, so we can just use absolute module paths

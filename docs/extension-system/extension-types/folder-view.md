@@ -33,7 +33,7 @@ For the folderView object, you have the following configuration options:
 
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed to the user when switching between different FolderView options
-- `icon` - Object, expecting an icon `name` and a corresponding `IconFillType`, see https://owncloud.design/#/Design%20Tokens/IconList for available options
+- `icon` - Object, expecting an icon `name` and a corresponding `IconFillType`, see https://opencloud.design/#/Design%20Tokens/IconList for available options
 - `isScrollable` - Optional boolean, determines whether the user can scroll inside the component or it statically fills the viewport
 - `component` - The Vue component to render the resources. It should expect a prop of type `Resource[]`
 - `componentAttrs` - Optional additional configuration for the component mentioned above

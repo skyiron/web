@@ -23,7 +23,7 @@ geekdocFilePath: e2e-testing-standards.md
 
 ## Introduction
 
-In ownCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and usability when test standards are consistent across repositories. For example:
+In OpenCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and usability when test standards are consistent across repositories. For example:
 
 - **Reusability:** Enhances reusability by making it easier to reuse functions, locators, shared steps, and other test code. Finding the necessary components and functionalities will be simple for someone working on a test resulting in reduced duplication and the requirement for rework after the initiation of a code review.
 
@@ -31,7 +31,7 @@ In ownCloud, we use Playwright for webUI test automation. We benefit from lower 
 
 - **Faster onboarding:** By following naming conventions, new contributors are onboarded more rapidly and feel comfortable enough to contribute to the codebase.
 
-Here are the test standards and guidelines we adhere to when creating Playwright tests at ownCloud.
+Here are the test standards and guidelines we adhere to when creating Playwright tests at OpenCloud.
 
 ## Folder Structure:
 - `tests/:`
@@ -330,7 +330,7 @@ Then the user should see an error message
 ```
 
 ## Broad Gherkin Guidelines
-This [ownCloud developer manual](https://doc.owncloud.com/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the ownCloud testing framework.
+This [OpenCloud developer manual](https://docs.opencloud.eu/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the ownCloud testing framework.
 
 In OpenCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and usability when test standards are consistent across repositories. For example:
 
@@ -639,4 +639,4 @@ Then the user should see an error message
 ```
 
 ## Broad Gherkin Guidelines
-This [OpenCloud developer manual](https://docs.opencloud.eu/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the ownCloud testing framework.
+This [OpenCloud developer manual](https://docs.opencloud.eu/server/next/developer_manual/testing/acceptance-tests.html#how-to-write-acceptance-tests) provides comprehensive guidelines and best practices for writing acceptance tests using the Gherkin syntax, a widely adopted language for defining test scenarios in a human-readable format. The manual outlines the specific syntax and structure required when crafting feature files and scenarios to ensure consistency and maintainability within the OpenCloud testing framework.

@@ -33,7 +33,7 @@ For `id`, `type`, and `extensionPointIds`, please see [extension base section]({
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from https://owncloud.design/#/Design%20Tokens/IconList
+- `icon` - The icon to be displayed, can be picked from https://opencloud.design/#/Design%20Tokens/IconList
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed
 - `route` - The string/route to navigate to. The nav item will be a `<router-link>` tag.

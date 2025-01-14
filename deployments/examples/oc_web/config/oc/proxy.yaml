@@ -5,17 +5,17 @@ policy_selector:
 policies:
   - name: oc
     routes:
-      # serve OC Web assets from the Web container
+      # serve OpenCloud Web assets from the Web container
       - endpoint: /
         backend: http://web:8080
         unprotected: true
-      # serve OC Web config from OC
+      # serve OpenCloud Web config from OC
       - endpoint: /config.json
         backend: http://localhost:9100
         unprotected: true
 
       # begin of regular OC proxy configuration
-      # we don't need the root rule for OC Web, since we replaced it
+      # we don't need the root rule for OpenCloud Web, since we replaced it
       # with the both rules above
       # - endpoint: /
       #   service: eu.opencloud.web.web

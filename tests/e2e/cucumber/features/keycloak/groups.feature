@@ -2,7 +2,7 @@ Feature: groups management
   As a user
   I want to manage all group-related operations using OpenCloud Web
   So that I can ensure all group-related operations work correctly with Keycloak integration
-  # For synchronization-related details, see https://owncloud.dev/services/proxy/#claim-updates
+  # For synchronization-related details, see https://docs.opencloud.eu/services/proxy/#claim-updates
 
 
   Scenario: keycloak group sync with OpenCloud

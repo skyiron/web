@@ -35,7 +35,7 @@ For `id`, `type`, and `extensionPointIds`, please see [extension base section]({
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from https://owncloud.design/#/Design%20Tokens/IconList
+- `icon` - The icon to be displayed, can be picked from https://opencloud.design/#/Design%20Tokens/IconList
 - `name` - The text to be displayed
 - `route` - The string/route to navigate to, if the nav item should be a `<router-link>` (Mutually exclusive with `handler`)
 - `handler` - The action to perform upon click, if the nav item should be a `<button>` (Mutually exclusive with `route`)
