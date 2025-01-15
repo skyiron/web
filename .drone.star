@@ -108,7 +108,7 @@ config = {
                 "NATS_NATS_PORT": 9233,
                 "COLLABORA_DOMAIN": "collabora:9980",
                 "ONLYOFFICE_DOMAIN": "onlyoffice:443",
-                "FRONTEND_APP_HANDLER_SECURE_VIEW_APP_ADDR": "com.opencloud.api.collaboration.Collabora",
+                "FRONTEND_APP_HANDLER_SECURE_VIEW_APP_ADDR": "eu.opencloud.api.collaboration.Collabora",
                 "WEB_UI_CONFIG_FILE": None,
             },
         },
