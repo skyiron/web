@@ -103,7 +103,7 @@
             "colorPalette": {
               "background-accentuate": "rgba(255, 255, 5, 0.1)",
               "background-default": "#ffffff",
-              "background-highlight": "#edf3fa",
+              "background-highlight": "#f1f3f4",
               "background-hover": "#EDD5FF",
               "background-muted": "#f8f8f8",
               "background-secondary": "#ffffff",
