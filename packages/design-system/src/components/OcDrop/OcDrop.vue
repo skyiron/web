@@ -183,8 +183,8 @@ export default defineComponent({
     const to = this.target
       ? document.querySelector(this.target)
       : this.toggle
-        ? document.querySelector(this.toggle)
-        : this.$el.previousElementSibling
+      ? document.querySelector(this.toggle)
+      : this.$el.previousElementSibling
     const content = this.$refs.drop
 
     if (!to || !content) {
@@ -286,6 +286,10 @@ export default defineComponent({
 
       &:hover span {
         color: var(--oc-color-swatch-brand-contrast) !important;
+
+        svg {
+          fill: var(--oc-color-swatch-brand-contrast) !important;
+        }
       }
 
       span {

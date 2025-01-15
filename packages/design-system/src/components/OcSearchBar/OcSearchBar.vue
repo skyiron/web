@@ -330,7 +330,6 @@ export default defineComponent({
     border-radius: 25px !important;
     border: none;
     padding: var(--oc-space-medium);
-    color: var(--oc-color-input-text-muted) !important;
 
     &:focus {
       background-color: var(--oc-color-input-bg);

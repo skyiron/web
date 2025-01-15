@@ -433,7 +433,6 @@ export default defineComponent({
 
 .oc-modal {
   background-color: var(--oc-color-background-default);
-  border: 1px solid var(--oc-color-input-border);
   border-radius: 5px;
   box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3);
   max-height: 90vh;
