@@ -140,7 +140,7 @@ Here, you can specify the images to be used in the `"topbar"`, for the `"favicon
 ```json
 "logo": {
   "topbar": "themes/opencloud/assets/logo.svg",
-  "favicon": "themes/opencloud/assets/favicon.jpg",
+  "favicon": "themes/opencloud/assets/favicon.ico",
   "login": "themes/opencloud/assets/logo.svg"
 },
 ```
@@ -151,7 +151,7 @@ You can set the background image for the login page by providing an image file i
 
 ```json
 "loginPage": {
-  "backgroundImg": "themes/opencloud/assets/loginBackground.jpg"
+  "backgroundImg": "themes/opencloud/assets/background.png"
 },
 ```
 
@@ -432,11 +432,11 @@ A full template for your custom theme is provided below, and you can use the ins
       "defaults": {
         "logo": {
           "topbar": "themes/opencloud/assets/logo.svg",
-          "favicon": "themes/opencloud/assets/favicon.jpg",
+          "favicon": "themes/opencloud/assets/favicon.ico",
           "login": "themes/opencloud/assets/logo.svg"
         },
         "loginPage": {
-          "backgroundImg": "themes/opencloud/assets/loginBackground.jpg"
+          "backgroundImg": "themes/opencloud/assets/background.png"
         },
         "designTokens": {
           "breakpoints": {

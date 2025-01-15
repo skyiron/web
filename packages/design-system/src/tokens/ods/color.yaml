@@ -6,22 +6,22 @@ color:
   swatch:
     brand:
       default:
-        value: rgb(4, 30, 66)
+        value: '#E2BAFF'
       hover:
-        value: rgb(34, 57, 89)
+        value: '#EDD5FF'
       muted:
-        value: rgb(0, 20, 40)
+        value: '#CA8DF5'
       contrast:
         value: '{color.text.inverse.value}'
     primary:
       default:
-        value: rgb(74, 118, 172)
+        value: '#20434f'
       hover:
-        value: rgb(128, 167, 215)
+        value: '#20434f'
       muted:
-        value: rgb(8, 105, 222)
+        value: '#20434f'
       gradient:
-        value: rgb(78, 133, 200)
+        value: '#20434f'
       contrast:
         value: '{color.text.inverse.value}'
     success:
@@ -53,11 +53,11 @@ color:
         value: '{color.text.inverse.value}'
     passive:
       default:
-        value: rgb(76, 95, 121)
+        value: '#19353f'
       hover:
-        value: rgb(151, 162, 177)
+        value: '#19353f'
       muted:
-        value: rgb(40, 62, 93)
+        value: '#19353f'
       contrast:
         value: '{color.text.inverse.value}'
     inverse:
@@ -82,6 +82,10 @@ color:
       value: rgba(255, 255, 5, 0.1)
     hover:
       value: rgb(236, 236, 236)
+    chrome:
+      value: '#20434F'
+    sidebar:
+      value: '#F1F3F4'
   border:
     value: rgb(236, 235, 238)
   text:

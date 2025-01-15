@@ -8,7 +8,7 @@ import WebFont from 'webfontloader'
 
 WebFont.load({
   custom: {
-    families: ['Inter'],
-    urls: ['/fonts/inter.css']
+    families: ['OpenTalk'],
+    urls: ['/fonts/opentalk.css']
   }
 })

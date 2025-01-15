@@ -1,7 +1,7 @@
 ---
 font:
   face:
-    value: 'Inter, sans-serif'
+    value: 'OpenTalk, sans-serif'
   weight:
     bold:
       value: '700'
