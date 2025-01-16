@@ -229,7 +229,9 @@ export default {
   }
 
   img {
-    max-height: 38px;
+    max-height: 26px;
+    margin-left: var(--oc-space-xsmall);
+    vertical-align: middle;
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: pixelated;

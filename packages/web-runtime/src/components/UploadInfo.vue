@@ -714,7 +714,7 @@ export default defineComponent({
   }
 
   .upload-info-title {
-    background-color: var(--oc-color-swatch-brand-default);
+    background-color: var(--oc-color-swatch-inverse-muted);
   }
 
   .upload-info-title p {

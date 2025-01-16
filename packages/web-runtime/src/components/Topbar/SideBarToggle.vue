@@ -4,7 +4,7 @@
     v-oc-tooltip="buttonLabel"
     :aria-label="buttonLabel"
     appearance="raw-inverse"
-    variation="brand"
+    variation="primary"
     class="oc-my-s"
     @click.stop="toggleSideBar"
   >

@@ -8,7 +8,7 @@
       id="_appSwitcherButton"
       v-oc-tooltip="applicationSwitcherLabel"
       appearance="raw-inverse"
-      variation="brand"
+      variation="primary"
       class="oc-topbar-menu-burger"
       :aria-label="applicationSwitcherLabel"
     >

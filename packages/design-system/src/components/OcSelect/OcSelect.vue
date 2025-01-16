@@ -542,7 +542,7 @@ export default defineComponent({
     &__dropdown-toggle,
     &__dropdown-menu {
       -webkit-appearance: none;
-      background-color: var(--oc-color-background-highlight);
+      background-color: var(--oc-color-background-default);
       border-radius: 0;
       border-radius: 5px;
       border: 1px solid var(--oc-color-input-border);
@@ -595,7 +595,7 @@ export default defineComponent({
       &--highlight,
       &--selected {
         background-color: var(--oc-color-background-hover);
-        color: var(--oc-color-swatch-brand-hover);
+        color: var(--oc-color-swatch-brand-contrast);
       }
     }
 
@@ -670,7 +670,7 @@ export default defineComponent({
     &.vs--multiple {
       .vs__selected-options > *:not(input) {
         color: var(--oc-color-input-text-default);
-        background-color: var(--oc-color-background-highlight);
+        background-color: var(--oc-color-background-default);
       }
     }
 

@@ -42,7 +42,7 @@
       :aria-label="$gettext('Click to display and focus the search bar')"
       class="mobile-search-btn oc-mr-l"
       appearance="raw-inverse"
-      variation="brand"
+      variation="primary"
       @click="showSearchBar"
     >
       <oc-icon name="search" fill-type="line"></oc-icon>
