@@ -7,12 +7,12 @@
     <oc-button
       id="_appSwitcherButton"
       v-oc-tooltip="applicationSwitcherLabel"
-      appearance="raw"
-      color-role="secondary"
-      class="oc-topbar-menu-burger"
+      appearance="raw-inverse"
+      color-role="surface"
+      class="oc-topbar-menu-burger no-hover"
       :aria-label="applicationSwitcherLabel"
     >
-      <oc-icon name="grid" size="large" class="oc-flex" />
+      <oc-icon name="grid" size="large" class="oc-flex" variation="inherit" />
     </oc-button>
     <oc-drop
       ref="menu"

@@ -3,12 +3,12 @@
     id="files-toggle-sidebar"
     v-oc-tooltip="buttonLabel"
     :aria-label="buttonLabel"
-    appearance="raw"
-    color-role="secondary"
-    class="oc-my-s"
+    appearance="raw-inverse"
+    color-role="surface"
+    class="oc-my-s no-hover"
     @click.stop="toggleSideBar"
   >
-    <oc-icon name="side-bar-right" :fill-type="buttonIconFillType" />
+    <oc-icon name="side-bar-right" variation="inherit" :fill-type="buttonIconFillType" />
   </oc-button>
 </template>
 

@@ -8,6 +8,10 @@ role:
     value: "#F2DAFF"
   onPrimaryContainer:
     value: "#2A0C41"
+  primaryFixed:
+    value: "#F2DAFF"
+  onPrimaryFixed:
+    value: "#2A0C41"
   secondary:
     value: "#665A6E"
   onSecondary:
@@ -16,6 +20,10 @@ role:
     value: "#EEDDF6"
   onSecondaryContainer:
     value: "#211829"
+  secondaryFixed:
+    value: "#B7EAFF"
+  onSecondaryFixed:
+    value: "#001F28"
   tertiary:
     value: "#815156"
   onTertiary:
@@ -23,6 +31,10 @@ role:
   tertiaryContainer:
     value: "#FFDADB"
   onTertiaryContainer:
+    value: "#321015"
+  tertiaryFixed:
+    value: "#FFDADB"
+  onTertiaryFixed:
     value: "#321015"
   error:
     value: "#BA1A1A"

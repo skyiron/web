@@ -3,8 +3,8 @@
     <oc-button
       v-oc-tooltip="toolTip"
       :type="handler ? 'button' : 'router-link'"
-      appearance="raw"
-      color-role="secondary"
+      :appearance="active ? 'filled' : 'raw-inverse'"
+      :color-role="active ? 'secondaryContainer' : 'surface'"
       :class="['oc-sidebar-nav-item-link', 'oc-oc-width-1-1', { active: active }]"
       :data-nav-id="index"
       :data-nav-name="navName"
@@ -106,8 +106,11 @@ export default defineComponent({
   user-select: none;
 
   .oc-tag {
-    color: var(--oc-color-text-default);
-    background-color: var(--oc-color-background-highlight);
+    background-color: var(--oc-role-tertiary-container);
+    color: var(--oc-role-on-tertiary-container);
+    svg {
+      fill: var(--oc-role-on-tertiary-container);
+    }
   }
   .text {
     opacity: 1;

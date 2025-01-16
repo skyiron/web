@@ -109,10 +109,15 @@ export default defineComponent({
           '',
           'primary',
           'primaryContainer',
+          'primaryFixed',
           'secondary',
           'secondaryContainer',
+          'secondaryFixed',
           'tertiary',
-          'tertiaryContainer'
+          'tertiaryContainer',
+          'tertiaryFixed',
+          'surface',
+          'surfaceContainer'
         ].includes(value)
     },
     /**
@@ -228,18 +233,17 @@ export default defineComponent({
 }
 
 @mixin oc-button-color-role($color, $on-color) {
-  //&:disabled {
-  //background-color: opacify($color, 0.5);
-  //color: opacify($on-color, 0.5);
-  //}
-
-  &:focus:not([disabled]),
-  &:hover:not([disabled]) {
-    background-color: var(--oc-role-primary-container);
-    color: var(--oc-role-on-primary-container);
+  &:focus:not([disabled]):not(.active):not(.no-hover),
+  &:hover:not([disabled]):not(.active):not(.no-hover) {
+    background-color: var(--oc-role-surface-container);
+    color: var(--oc-role-on-surface);
+    .oc-icon > svg {
+      fill: var(--oc-role-on-surface);
+    }
   }
 
-  &-raw {
+  &-raw,
+  &-raw-inverse {
     border-style: none;
     font-size: var(--oc-font-size-medium);
     font-weight: normal;
@@ -252,20 +256,16 @@ export default defineComponent({
       fill: $color;
     }
 
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: transparent;
-    }
-
     &:focus:not([disabled]):not(button),
     &:hover:not([disabled]):not(button) {
+      background-color: transparent;
       text-decoration: underline;
     }
-
-    &:disabled {
-      background-color: transparent;
-      color: $color;
-      //color: opacify($color, 0.5);
+  }
+  &-raw-inverse {
+    color: $on-color;
+    .oc-icon > svg {
+      fill: $on-color;
     }
   }
 
@@ -274,15 +274,6 @@ export default defineComponent({
     color: $on-color;
     .oc-icon > svg {
       fill: $on-color;
-    }
-
-    &:hover:not([disabled]),
-    &:focus:not([disabled]) {
-      background-color: var(--oc-role-primary-container);
-      color: var(--oc-role-on-primary-container);
-      .oc-icon > svg {
-        fill: var(--oc-role-on-primary-container);
-      }
     }
   }
 
@@ -293,21 +284,6 @@ export default defineComponent({
     color: $color;
     .oc-icon > svg {
       fill: $color;
-    }
-
-    &:hover:not([disabled]),
-    &:focus:not([disabled]) {
-      background-color: var(--oc-role-primary-container);
-      color: var(--oc-role-on-primary-container);
-      .oc-icon > svg {
-        fill: var(--oc-role-on-primary-container);
-      }
-    }
-
-    &:disabled {
-      background-color: transparent;
-      color: $color;
-      //color: opacify($color, 0.5);
     }
   }
 }
@@ -503,6 +479,9 @@ export default defineComponent({
       var(--oc-role-on-primary-container)
     );
   }
+  &-role-primary-fixed {
+    @include oc-button-color-role(var(--oc-role-primary-fixed), var(--oc-role-on-primary-fixed));
+  }
   &-role-secondary {
     @include oc-button-color-role(var(--oc-role-secondary), var(--oc-role-on-secondary));
   }
@@ -510,6 +489,12 @@ export default defineComponent({
     @include oc-button-color-role(
       var(--oc-role-secondary-container),
       var(--oc-role-on-secondary-container)
+    );
+  }
+  &-role-secondary-fixed {
+    @include oc-button-color-role(
+      var(--oc-role-secondary-fixed),
+      var(--oc-role-on-secondary-fixed)
     );
   }
   &-role-tertiary {
@@ -520,6 +505,15 @@ export default defineComponent({
       var(--oc-role-tertiary-container),
       var(--oc-role-on-tertiary-container)
     );
+  }
+  &-role-tertiary-fixed {
+    @include oc-button-color-role(var(--oc-role-tertiary-fixed), var(--oc-role-on-tertiary-fixed));
+  }
+  &-role-surface {
+    @include oc-button-color-role(var(--oc-role-surface), var(--oc-role-on-surface));
+  }
+  &-role-surface-container {
+    @include oc-button-color-role(var(--oc-role-surface-container), var(--oc-role-on-surface));
   }
 
   &-passive {

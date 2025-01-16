@@ -8,7 +8,7 @@
           v-oc-tooltip="hideButtonLabels ? $gettext('New') : ''"
           :aria-label="newButtonAriaLabel"
           appearance="filled"
-          variation="primary"
+          color-role="secondary"
           :disabled="uploadOrFileCreationBlocked"
         >
           <oc-icon name="add" />
@@ -109,7 +109,7 @@
         :aria-label="uploadButtonAriaLabel"
         :disabled="uploadOrFileCreationBlocked"
         appearance="outline"
-        variation="passive"
+        color-role="secondary"
       >
         <oc-icon name="upload" fill-type="line" />
         <span v-if="!hideButtonLabels" v-text="$gettext('Upload')" />
