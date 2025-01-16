@@ -53,7 +53,7 @@
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -62,7 +62,7 @@
         "description": "${role_uma_authorization}",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -71,7 +71,7 @@
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -80,7 +80,7 @@
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -89,7 +89,7 @@
         "description": "${role_offline-access}",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -110,7 +110,7 @@
           }
         },
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       },
       {
@@ -119,7 +119,7 @@
         "description": "",
         "composite": false,
         "clientRole": false,
-        "containerId": "OpenCloud Infinite Scale Test",
+        "containerId": "OpenCloud Test",
         "attributes": {}
       }
     ],
@@ -467,7 +467,7 @@
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
-    "containerId": "OpenCloud Infinite Scale Test"
+    "containerId": "OpenCloud Test"
   },
   "requiredCredentials": [
     "password"
