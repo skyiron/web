@@ -180,7 +180,7 @@ export default defineComponent({
 
 #web-nav-sidebar {
   background-color: var(--oc-role-surface);
-  border-right: 1px solid var(--oc-role-surface-container);
+  border-right: 1px solid var(--oc-role-outline-variant);
   border-radius: 15px 0 0 15px;
   display: flex;
   flex-direction: column;

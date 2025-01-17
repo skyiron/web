@@ -28,6 +28,7 @@
       v-oc-tooltip="viewOptionsButtonLabel"
       data-testid="files-view-options-btn"
       :aria-label="viewOptionsButtonLabel"
+      color-role="secondary"
       appearance="raw"
       class="oc-my-s oc-p-xs"
     >
@@ -253,7 +254,6 @@ export default defineComponent({
   vertical-align: middle;
   border: 3px solid transparent;
   &:hover {
-    background-color: var(--oc-color-background-hover);
     border-radius: 3px;
   }
 }

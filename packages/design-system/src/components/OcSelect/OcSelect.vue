@@ -511,8 +511,8 @@ export default defineComponent({
   .vs__open-indicator,
   .vs__search,
   .vs__selected {
-    background-color: var(--oc-color-background-muted) !important;
-    color: var(--oc-color-input-text-muted) !important;
+    background-color: var(--oc-role-secondary) !important;
+    color: var(--oc-role-on-secondary) !important;
     pointer-events: none;
   }
 
@@ -570,7 +570,7 @@ export default defineComponent({
 
     &__dropdown-menu {
       padding: 0;
-      background-color: var(--oc-color-background-default);
+      background-color: var(--oc-role-surface);
       margin-top: -1px;
     }
 
@@ -594,8 +594,8 @@ export default defineComponent({
 
       &--highlight,
       &--selected {
-        background-color: var(--oc-color-background-hover);
-        color: var(--oc-color-swatch-brand-contrast);
+        background-color: var(--oc-role-surface-container);
+        color: var(--oc-role-on-surface-container);
       }
     }
 
@@ -626,7 +626,7 @@ export default defineComponent({
       > *:not(input) {
         padding-left: 3px;
         background-color: var(--oc-color-background-default);
-        fill: var(--oc-color-text-default);
+        fill: var(--oc-role-on-surface);
       }
     }
   }

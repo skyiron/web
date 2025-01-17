@@ -30,6 +30,7 @@
               class="oc-width-1-1"
               justify-content="left"
               appearance="raw"
+              color-role="secondary"
               @click="createNewFolderAction"
             >
               <resource-icon :resource="folderIconResource" size="medium" />
@@ -50,6 +51,7 @@
               appearance="raw"
               class="oc-width-1-1"
               justify-content="left"
+              color-role="secondary"
               :class="['new-file-btn-' + fileAction.ext]"
               @click="fileAction.handler"
             >
@@ -71,6 +73,7 @@
               class="oc-width-1-1"
               justify-content="left"
               appearance="raw"
+              color-role="secondary"
               @click="createNewShortcutAction"
             >
               <oc-icon name="external-link" size="medium" />
@@ -91,7 +94,7 @@
           id="new-folder-btn"
           v-oc-tooltip="hideButtonLabels ? $gettext('New Folder') : ''"
           appearance="filled"
-          variation="primary"
+          color-role="secondary"
           :aria-label="newButtonAriaLabel"
           :disabled="uploadOrFileCreationBlocked"
           @click="createNewFolderAction"
@@ -145,6 +148,7 @@
             class="oc-width-1-1"
             :class="action.class"
             appearance="raw"
+            color-role="secondary"
             justify-content="left"
             :disabled="isActionDisabled(action)"
             @click="action.handler"

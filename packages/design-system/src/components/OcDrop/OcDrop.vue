@@ -275,8 +275,6 @@ export default defineComponent({
 
       &:focus:not([disabled]),
       &:hover:not([disabled]) {
-        background-color: var(--oc-color-background-hover);
-
         text-decoration: none !important;
         border-radius: 5px;
       }

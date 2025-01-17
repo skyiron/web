@@ -28,9 +28,9 @@
           <li v-for="(n, nid) in sortedMenuItems" :key="`apps-menu-${nid}`">
             <oc-button
               :key="n.url ? 'apps-menu-external-link' : 'apps-menu-internal-link'"
-              :appearance="isMenuItemActive(n) ? 'raw-inverse' : 'raw'"
-              :variation="isMenuItemActive(n) ? 'primary' : 'passive'"
-              :class="{ 'oc-background-primary-gradient router-link-active': isMenuItemActive(n) }"
+              :appearance="isMenuItemActive(n) ? 'filled' : 'raw-inverse'"
+              :color-role="isMenuItemActive(n) ? 'secondaryContainer' : 'surface'"
+              :class="{ 'router-link-active': isMenuItemActive(n) }"
               :data-test-id="n.id"
               v-bind="getAdditionalAttributes(n)"
               v-on="getAdditionalEventBindings(n)"
@@ -154,26 +154,7 @@ export default defineComponent({
     justify-content: flex-start;
     width: 100%;
 
-    &.oc-button-primary-raw-inverse {
-      &:focus,
-      &:hover {
-        color: var(--oc-color-swatch-primary-contrast) !important;
-      }
-    }
-
-    &.oc-button-passive-raw {
-      &:focus,
-      &:hover {
-        color: var(--oc-color-swatch-passive-default) !important;
-      }
-    }
-
     &:focus {
-      text-decoration: none;
-    }
-
-    &:hover {
-      background-color: var(--oc-color-background-hover);
       text-decoration: none;
     }
 

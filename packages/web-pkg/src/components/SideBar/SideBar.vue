@@ -292,7 +292,7 @@ export default defineComponent({
 
 <style lang="scss">
 #app-sidebar {
-  border-left: 1px solid var(--oc-color-border);
+  border-left: 1px solid var(--oc-role-outline-variant);
   position: relative;
   overflow: hidden;
   min-width: 440px;
@@ -360,7 +360,7 @@ export default defineComponent({
   }
 
   .multi-root-panel-separator {
-    border-top: 1px solid var(--oc-color-border);
+    border-top: 1px solid var(--oc-role-outline-variant);
   }
 
   &__header {
@@ -379,7 +379,7 @@ export default defineComponent({
 
       &__title {
         text-align: center;
-        color: var(--oc-color-text-default);
+        color: var(--oc-role-on-surface);
         font-size: var(--oc-font-size-large);
         grid-column-start: 2;
       }
@@ -406,10 +406,10 @@ export default defineComponent({
     margin: var(--oc-space-small) - var(--oc-space-small) - var(--oc-space-small);
 
     > button {
-      border-bottom: 1px solid var(--oc-color-border);
+      border-bottom: 1px solid var(--oc-role-outline-variant);
       width: 100%;
       border-radius: 0;
-      color: var(--oc-color-text-default) !important;
+      color: var(--oc-role-on-surface) !important;
       display: grid;
       grid-template-columns: auto 1fr auto;
       text-align: left;
@@ -417,7 +417,7 @@ export default defineComponent({
       padding: 0 var(--oc-space-small);
 
       &:first-of-type {
-        border-top: 1px solid var(--oc-color-border);
+        border-top: 1px solid var(--oc-role-outline-variant);
       }
 
       &:last-of-type {
@@ -426,7 +426,7 @@ export default defineComponent({
 
       &:hover,
       &:focus {
-        border-color: var(--oc-color-border) !important;
+        border-color: var(--oc-role-outline-variant) !important;
       }
     }
   }

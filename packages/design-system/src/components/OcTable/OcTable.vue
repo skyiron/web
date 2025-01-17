@@ -524,11 +524,11 @@ export default defineComponent({
   }
 
   tr + tr {
-    border-top: 1px solid var(--oc-color-border);
+    border-top: 1px solid var(--oc-role-outline-variant);
   }
 
   &-hover tr:not(&-footer-row):hover {
-    background-color: var(--oc-color-background-hover);
+    background-color: var(--oc-role-surface-container);
   }
 
   &-hover
@@ -576,7 +576,7 @@ export default defineComponent({
   }
 
   &-footer {
-    border-top: 1px solid var(--oc-color-border);
+    border-top: 1px solid var(--oc-role-outline-variant);
 
     &-cell {
       color: var(--oc-color-text-muted);
@@ -591,7 +591,7 @@ export default defineComponent({
   justify-content: start;
   .oc-icon {
     &:hover {
-      background-color: var(--oc-color-background-hover);
+      background-color: var(--oc-role-surface-container);
     }
   }
 }

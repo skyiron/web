@@ -497,7 +497,7 @@ export default defineComponent({
   }
 
   &-body {
-    color: var(--oc-color-text-default);
+    color: var(--oc-role-on-surface);
     line-height: 1.625;
     padding: var(--oc-space-medium) var(--oc-space-medium) 0;
 

@@ -533,7 +533,7 @@ export default defineComponent({
   }
 
   .oc-search-input {
-    background-color: var(--oc-color-input-bg);
+    background-color: var(--oc-role-surface-container-highest);
     transition: 0s;
     height: 2.3rem;
 

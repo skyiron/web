@@ -80,7 +80,9 @@ export default defineComponent({
 <style lang="scss">
 .item-inline-filter {
   border-radius: 99px;
-  border: 1px solid var(--oc-color-text-muted);
+  border: 1px solid var(--oc-role-outline);
+  background-color: var(--oc-role-surface-container) !important;
+  color: var(--oc-role-on-surface-container) !important;
 
   button {
     text-decoration: none;
@@ -104,8 +106,8 @@ export default defineComponent({
   }
 
   &-option-selected {
-    background-color: var(--oc-color-swatch-primary-default) !important;
-    color: var(--oc-color-text-inverse) !important;
+    background-color: var(--oc-role-secondary) !important;
+    color: var(--oc-role-on-secondary) !important;
   }
 }
 </style>
