@@ -6,7 +6,7 @@
 .oc-card {
   @extend .oc-rounded;
 
-  background-color: var(--oc-color-background-highlight);
+  background-color: var(--oc-role-surface);
   box-sizing: border-box;
   color: var(--oc-color-text-default);
   position: relative;

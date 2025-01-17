@@ -195,7 +195,9 @@ export default defineComponent({
         `oc-button-justify-content-${this.justifyContent}`,
         `oc-button-gap-${getSizeClass(this.gapSize)}`,
         `oc-button-${this.colorRole ? `role-${kebabCase(this.colorRole)}` : this.variation}`,
-        `oc-button-${this.colorRole ? `role-${kebabCase(this.colorRole)}` : this.variation}-${this.appearance}`
+        `oc-button-${this.colorRole ? `role-${kebabCase(this.colorRole)}` : this.variation}-${
+          this.appearance
+        }`
       ]
     },
 
@@ -233,15 +235,6 @@ export default defineComponent({
 }
 
 @mixin oc-button-color-role($color, $on-color) {
-  &:focus:not([disabled]):not(.active):not(.no-hover),
-  &:hover:not([disabled]):not(.active):not(.no-hover) {
-    background-color: var(--oc-role-surface-container);
-    color: var(--oc-role-on-surface);
-    .oc-icon > svg {
-      fill: var(--oc-role-on-surface);
-    }
-  }
-
   &-raw,
   &-raw-inverse {
     border-style: none;
@@ -260,6 +253,15 @@ export default defineComponent({
     &:hover:not([disabled]):not(button) {
       background-color: transparent;
       text-decoration: underline;
+    }
+
+    &:focus:not([disabled]):not(.active):not(.no-hover),
+    &:hover:not([disabled]):not(.active):not(.no-hover) {
+      background-color: var(--oc-role-surface-container);
+      color: var(--oc-role-on-surface);
+      .oc-icon > svg {
+        fill: var(--oc-role-on-surface);
+      }
     }
   }
   &-raw-inverse {

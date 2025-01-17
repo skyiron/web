@@ -1,9 +1,6 @@
 <template>
   <div :id="dropId" ref="drop" class="oc-drop oc-box-shadow-medium oc-rounded" @click="onClick">
-    <div
-      v-if="$slots.default"
-      :class="['oc-card oc-card-body oc-background-secondary', paddingClass]"
-    >
+    <div v-if="$slots.default" :class="['oc-card oc-card-body', paddingClass]">
       <slot />
     </div>
     <slot v-else name="special" />

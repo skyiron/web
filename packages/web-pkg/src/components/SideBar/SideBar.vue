@@ -84,7 +84,8 @@
               :id="`sidebar-panel-${panelSelect.name}-select`"
               :key="`panel-select-${panelSelect.name}`"
               :data-testid="`sidebar-panel-${panelSelect.name}-select`"
-              appearance="raw"
+              appearance="raw-inverse"
+              color-role="surface"
               @click="openPanel(panelSelect.name)"
             >
               <oc-icon :name="panelSelect.icon" :fill-type="panelSelect.iconFillType" />
@@ -323,13 +324,11 @@ export default defineComponent({
   max-height: 100%;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  background-color: var(--oc-color-background-default);
+  background-color: var(--oc-role-surface);
   top: 0;
   position: absolute;
   transform: translateX(100%);
-  transition:
-    transform 0.4s ease,
-    visibility 0.4s 0s;
+  transition: transform 0.4s ease, visibility 0.4s 0s;
   // visibility is here to prevent focusing panel child elements,
   // the transition delay keeps care that it will only apply if the element is visible or not.
   // hidden: if element is off screen
@@ -428,10 +427,6 @@ export default defineComponent({
       &:hover,
       &:focus {
         border-color: var(--oc-color-border) !important;
-      }
-
-      &:hover {
-        background-color: var(--oc-color-background-muted) !important;
       }
     }
   }

@@ -18,7 +18,7 @@ x-opencloud-server: &opencloud-service
     WEB_ASSET_CORE_PATH: ${WEB_ASSET_CORE_PATH:-/web/dist}
     WEB_ASSET_APPS_PATH: ${WEB_ASSET_APPS_PATH:-/web/apps}
     WEB_ASSET_THEMES_PATH: ${WEB_ASSET_THEMES_PATH:-/web/themes}
-    WEB_UI_THEME_PATH: ${WEB_UI_THEME_PATH:-/themes/opencloud/theme.json}
+    WEB_UI_THEME_PATH: ${WEB_UI_THEME_PATH:-/themes/ocis/theme.json}
     WEB_UI_CONFIG_FILE: ${WEB_UI_CONFIG_FILE:-/web/config.json}
 
     #FRONTEND

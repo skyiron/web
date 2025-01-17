@@ -539,7 +539,7 @@ export default defineComponent({
   }
 
   &-highlighted {
-    background-color: var(--oc-color-background-highlight) !important;
+    background-color: var(--oc-role-secondary-container) !important;
   }
 
   &-accentuated {
@@ -557,7 +557,6 @@ export default defineComponent({
     position: relative;
 
     .oc-table-header-cell {
-      background-color: var(--oc-color-background-default);
       position: sticky;
       z-index: 1;
     }
