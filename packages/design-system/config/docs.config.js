@@ -17,7 +17,7 @@ module.exports = {
     maxWidth: '100%',
     sidebarWidth: 240,
     fontFamily: {
-      base: ['OpenTalk', 'sans-serif'],
+      base: ['OpenCloud', 'sans-serif'],
       monospace: ['Consolas', "'Liberation Mono'", 'Menlo', 'monospace']
     }
   },

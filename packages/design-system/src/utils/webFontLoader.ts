@@ -8,7 +8,7 @@ import WebFont from 'webfontloader'
 
 WebFont.load({
   custom: {
-    families: ['OpenTalk'],
-    urls: ['/fonts/opentalk.css']
+    families: ['OpenCloud'],
+    urls: ['/fonts/opencloud.css']
   }
 })
