@@ -121,19 +121,7 @@ export default defineComponent({
     transition: 0s;
   }
 
-  <<<<<<< HEAD &:hover:not(.active) {
-    background-color: var(--oc-color-swatch-brand-hover) !important;
-    color: var(--oc-color-swatch-brand-contrast) !important;
-    svg {
-      fill: var(--oc-color-swatch-brand-contrast) !important;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    text-decoration: none !important;
-  }
-  =======>>>>>>>636a4af85 (feat(WIP): theming) &.active {
+  &.active {
     overflow: hidden;
   }
   &:focus,
