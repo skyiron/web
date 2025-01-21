@@ -279,14 +279,6 @@ export default defineComponent({
         border-radius: 5px;
       }
 
-      &:hover span {
-        color: var(--oc-color-swatch-brand-contrast) !important;
-
-        svg {
-          fill: var(--oc-color-swatch-brand-contrast) !important;
-        }
-      }
-
       span {
         text-decoration: none !important;
       }
