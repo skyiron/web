@@ -30,7 +30,7 @@
               :key="n.url ? 'apps-menu-external-link' : 'apps-menu-internal-link'"
               :appearance="isMenuItemActive(n) ? 'raw-inverse' : 'raw'"
               :variation="isMenuItemActive(n) ? 'primary' : 'passive'"
-              :class="{ 'oc-background-primary-gradient router-link-active': isMenuItemActive(n) }"
+              :class="{ 'oc-background-primary-default router-link-active': isMenuItemActive(n) }"
               :data-test-id="n.id"
               v-bind="getAdditionalAttributes(n)"
               v-on="getAdditionalEventBindings(n)"

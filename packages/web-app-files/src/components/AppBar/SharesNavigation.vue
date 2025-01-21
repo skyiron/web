@@ -25,7 +25,7 @@
               type="router-link"
               class="oc-my-xs shares-nav-mobile"
               :to="navItem.to"
-              :class="{ 'oc-background-primary-gradient': navItem.active }"
+              :class="{ 'oc-background-primary-default': navItem.active }"
               :appearance="navItem.active ? 'raw-inverse' : 'raw'"
               :variation="navItem.active ? 'primary' : 'passive'"
             >

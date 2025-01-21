@@ -24,7 +24,7 @@
             :variation="item.active ? 'primary' : 'passive'"
             :to="item.route"
             class="oc-display-block oc-p-s"
-            :class="{ 'oc-background-primary-gradient router-link-active': item.active }"
+            :class="{ 'oc-background-primary-default router-link-active': item.active }"
           >
             <span class="oc-flex">
               <oc-icon :name="item.icon" variation="inherit" />

@@ -47,7 +47,7 @@
             justify-content="space-between"
             class="files-recipient-role-drop-btn oc-p-s"
             :class="{
-              'oc-background-primary-gradient': isSelectedRole(role),
+              'oc-background-primary-default': isSelectedRole(role),
               selected: isSelectedRole(role)
             }"
             :appearance="isSelectedRole(role) ? 'raw-inverse' : 'raw'"

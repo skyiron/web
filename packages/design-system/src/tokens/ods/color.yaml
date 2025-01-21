@@ -20,8 +20,6 @@ color:
         value: '#20434f'
       muted:
         value: '#20434f'
-      gradient:
-        value: '#20434f'
       contrast:
         value: '#ffffff'
     success:

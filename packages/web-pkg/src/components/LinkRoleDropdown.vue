@@ -31,7 +31,7 @@
           :id="`files-role-${getLinkRoleByType(type).id}`"
           :class="{
             selected: isSelectedType(type),
-            'oc-background-primary-gradient': isSelectedType(type)
+            'oc-background-primary-default': isSelectedType(type)
           }"
           :appearance="isSelectedType(type) ? 'raw-inverse' : 'raw'"
           :variation="isSelectedType(type) ? 'primary' : 'passive'"
