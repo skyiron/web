@@ -70,6 +70,7 @@
                 size="medium"
                 justify-content="space-between"
                 class="invite-form-share-role-type-item oc-flex oc-flex-middle oc-width-1-1 oc-py-xs oc-px-s"
+                :class="{ 'oc-background-highlight': option.id === currentShareRoleType.id }"
                 @click="selectShareRoleType(option)"
               >
                 <span>{{ option.longLabel }}</span>
@@ -639,8 +640,16 @@ export default defineComponent({
       padding: 0 !important;
     }
 
-    &-item:hover {
-      background-color: var(--oc-color-background-hover) !important;
+    &-item {
+      margin-top: var(--oc-space-xsmall);
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:hover:not(.oc-background-highlight) {
+        background-color: var(--oc-color-background-hover) !important;
+      }
     }
 
     .oc-drop {

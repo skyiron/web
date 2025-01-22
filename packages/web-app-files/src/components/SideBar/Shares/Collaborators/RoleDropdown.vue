@@ -47,11 +47,11 @@
             justify-content="space-between"
             class="files-recipient-role-drop-btn oc-p-s"
             :class="{
-              'oc-background-primary-default': isSelectedRole(role),
+              'oc-background-highlight': isSelectedRole(role),
               selected: isSelectedRole(role)
             }"
-            :appearance="isSelectedRole(role) ? 'raw-inverse' : 'raw'"
-            :variation="isSelectedRole(role) ? 'primary' : 'passive'"
+            appearance="raw"
+            variation="passive"
             @click="selectRole(role)"
           >
             <span class="oc-flex oc-flex-middle">

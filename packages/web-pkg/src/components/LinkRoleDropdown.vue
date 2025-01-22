@@ -31,10 +31,10 @@
           :id="`files-role-${getLinkRoleByType(type).id}`"
           :class="{
             selected: isSelectedType(type),
-            'oc-background-primary-default': isSelectedType(type)
+            'oc-background-highlight': isSelectedType(type)
           }"
-          :appearance="isSelectedType(type) ? 'raw-inverse' : 'raw'"
-          :variation="isSelectedType(type) ? 'primary' : 'passive'"
+          appearance="raw"
+          variation="passive"
           justify-content="space-between"
           class="oc-p-s"
           @click="updateSelectedType(type)"
@@ -145,10 +145,6 @@ export default defineComponent({
       background-color: var(--oc-color-background-hover);
       text-decoration: none;
     }
-  }
-
-  .selected span {
-    color: var(--oc-color-swatch-primary-contrast);
   }
 }
 </style>
