@@ -170,6 +170,7 @@ export default defineComponent({
         `oc-button-justify-content-${this.justifyContent}`,
         `oc-button-gap-${getSizeClass(this.gapSize)}`,
         `oc-button-${this.variation}`,
+        `oc-button-${this.appearance}`,
         `oc-button-${this.variation}-${this.appearance}`
       ]
     },
@@ -462,13 +463,6 @@ export default defineComponent({
       var(--oc-color-swatch-danger-muted),
       var(--oc-color-swatch-danger-contrast)
     );
-
-    &-filled:hover {
-      color: var(--oc-color-swatch-danger-default) !important;
-      span > svg {
-        fill: var(--oc-color-swatch-danger-default) !important;
-      }
-    }
   }
 
   &:disabled {
