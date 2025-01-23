@@ -592,9 +592,13 @@ export default defineComponent({
       border-radius: 5px;
       line-height: var(--vs-line-height);
 
-      &--highlight,
-      &--selected {
+      &--highlight {
         background-color: var(--oc-color-background-hover);
+        color: var(--oc-color-swatch-brand-contrast);
+      }
+
+      &--selected {
+        background-color: var(--oc-color-background-highlight);
         color: var(--oc-color-swatch-brand-contrast);
       }
     }

@@ -363,7 +363,6 @@ export default defineComponent({
 }
 
 .oc-modal-body-actions-confirm-secondary-trigger {
-  background: var(--oc-color-swatch-primary-gradient);
   padding: var(--oc-space-xsmall);
 }
 

@@ -60,12 +60,13 @@ The structure of a valid `common` section is outlined below:
     "accessDeniedHelp": "",
     "imprint": "",
     "privacy": ""
-  }, 
+  },
   "shareRoles": {}
 }
 ```
 
 All of the below parameters are required:
+
 - `name` specifies the publicly visible name
 - `slogan` specifies the publicly visible slogan
 - `logo` specifies the logo in e.g. the top bar within the web UI
@@ -114,7 +115,7 @@ Configures a app banner that gets shown on mobile devices and suggests downloadi
 
 Example structure:
 
-```json 
+```json
 {
   "appBanner": {
     "title": "OpenCloud",
@@ -245,8 +246,6 @@ Again, you can use the [OpenCloud design tokens](https://opencloud.design/#/Desi
     "swatch-primary-hover": "",
     "swatch-primary-muted": "",
     "swatch-primary-muted-hover": "",
-    "swatch-primary-gradient": "",
-    "swatch-primary-gradient-hover": "",
     "swatch-primary-contrast": "",
     "swatch-success-default": "",
     "swatch-success-hover": "",
@@ -360,10 +359,12 @@ Apart from the `defaults`, you need to provide one or more themes in the `themes
 Again, both the global `common` section as well as the `defaults` will get merged into your themes, but locally provided information takes precedence.
 
 Required information
+
 - `name` for the visible name in the theme switcher and to save the current theme to localStorage
 - `isDark` to provide the user agent with additional information
 
 Optional information
+
 - `appBanner` see section above
 - `common` see section above
 - `designTokens` see section above
@@ -513,8 +514,6 @@ A full template for your custom theme is provided below, and you can use the ins
               "swatch-primary-hover": "#80a7d7",
               "swatch-primary-muted": "#2c588e",
               "swatch-primary-muted-hover": "rgb(36, 75, 119)",
-              "swatch-primary-gradient": "#4e85c8",
-              "swatch-primary-gradient-hover": "rgb(59, 118, 194)",
               "swatch-primary-contrast": "#ffffff",
               "swatch-success-default": "rgb(3, 84, 63)",
               "swatch-success-hover": "#023b2c",
@@ -572,8 +571,6 @@ A full template for your custom theme is provided below, and you can use the ins
               "swatch-primary-hover": "#7bafef",
               "swatch-primary-muted": "",
               "swatch-primary-muted-hover": "#2282f7",
-              "swatch-primary-gradient": "#4e85c8",
-              "swatch-primary-gradient-hover": "#76a1d5",
               "swatch-primary-contrast": "#dadcdf",
               "swatch-success-background": "rgba(0, 188, 140, 0)",
               "swatch-success-default": "rgb(0, 188, 140)",
