@@ -1,14 +1,15 @@
 <div align=center>
 
- [![Matrix](https://img.shields.io/matrix/opencloud%3Amatrix.org?logo=matrix)](https://app.element.io/#/room/#opencloud:matrix.org)
- [![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+-[![Matrix](https://img.shields.io/matrix/opencloud%3Amatrix.org?logo=matrix)](https://app.element.io/#/room/#opencloud:matrix.org)
+-[![License](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 # OpenCloud Web
 With OpenCloud Web you can manage your OpenCloud in your browser.
 
 </div>
 
-![image](https://github.com/user-attachments/assets/f7d0b419-674c-44b5-aa30-1dd6b6d029de)
+![Screenshot of the OpenCloud web UI](https://raw.githubusercontent.com/opencloud-eu/.github/refs/heads/main/profile/web-ui-gallery-view-optimized.jpg)
+
 
 OpenCloud Web is a single page, standalone frontend, based on modern web technologies. It brings new features as well as improved user flows and can be deployed independent of the backend server.
 
