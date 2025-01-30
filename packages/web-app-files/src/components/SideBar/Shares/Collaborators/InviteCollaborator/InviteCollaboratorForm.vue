@@ -131,7 +131,7 @@
           key="new-collaborator-save-button"
           data-testid="new-collaborators-form-create-button"
           :disabled="!$_isValid || saving"
-          :variation="saving ? 'passive' : 'primary'"
+          color-role="secondary"
           :appearance="saving ? 'outline' : 'filled'"
           submit="submit"
           :show-spinner="savingDelayed"

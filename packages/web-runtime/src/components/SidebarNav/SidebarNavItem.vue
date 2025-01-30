@@ -3,8 +3,8 @@
     <oc-button
       v-oc-tooltip="toolTip"
       :type="handler ? 'button' : 'router-link'"
-      appearance="raw"
-      :variation="active ? 'primary' : 'passive'"
+      :appearance="active ? 'filled' : 'raw-inverse'"
+      :color-role="active ? 'secondaryContainer' : 'surface'"
       :class="['oc-sidebar-nav-item-link', 'oc-oc-width-1-1', { active: active }]"
       :data-nav-id="index"
       :data-nav-name="navName"
@@ -106,8 +106,11 @@ export default defineComponent({
   user-select: none;
 
   .oc-tag {
-    color: var(--oc-color-text-default);
-    background-color: var(--oc-color-background-highlight);
+    background-color: var(--oc-role-tertiary-container);
+    color: var(--oc-role-on-tertiary-container);
+    svg {
+      fill: var(--oc-role-on-tertiary-container);
+    }
   }
   .text {
     opacity: 1;
@@ -118,20 +121,12 @@ export default defineComponent({
     transition: 0s;
   }
 
-  &:hover:not(.active) {
-    background-color: var(--oc-color-swatch-brand-hover) !important;
-    color: var(--oc-color-swatch-brand-contrast) !important;
-    svg {
-      fill: var(--oc-color-swatch-brand-contrast) !important;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    text-decoration: none !important;
-  }
   &.active {
     overflow: hidden;
+  }
+  &:focus,
+  &:hover {
+    text-decoration: none !important;
   }
 
   .oc-icon svg {

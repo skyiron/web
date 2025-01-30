@@ -16,6 +16,7 @@
 import { defineComponent, PropType } from 'vue'
 import { RouteLocationRaw } from 'vue-router'
 import { getSizeClass } from '../../helpers'
+import { kebabCase } from 'lodash-es'
 
 export default defineComponent({
   name: 'OcButton',
@@ -95,6 +96,31 @@ export default defineComponent({
       }
     },
     /**
+     * Material design color role.
+     * If any value is provided, `variation` (old theming system) will be ignored.
+     * With our material design implementation the appearance `raw-inverse` is unsupported.
+     */
+    colorRole: {
+      type: String,
+      required: false,
+      default: '',
+      validator: (value: string) =>
+        [
+          '',
+          'primary',
+          'primaryContainer',
+          'primaryFixed',
+          'secondary',
+          'secondaryContainer',
+          'secondaryFixed',
+          'tertiary',
+          'tertiaryContainer',
+          'tertiaryFixed',
+          'surface',
+          'surfaceContainer'
+        ].includes(value)
+    },
+    /**
      * Style variation to give additional meaning.
      * Defaults to `primary`.
      * Can be `passive, primary, danger, success, warning, brand`.
@@ -102,9 +128,8 @@ export default defineComponent({
     variation: {
       type: String,
       default: 'passive',
-      validator: (value: string) => {
-        return ['passive', 'primary', 'danger', 'success', 'warning', 'brand'].includes(value)
-      }
+      validator: (value: string) =>
+        ['passive', 'primary', 'danger', 'success', 'warning', 'brand'].includes(value)
     },
     /**
      * Style variation to give additional meaning.
@@ -169,9 +194,10 @@ export default defineComponent({
         `oc-button-${getSizeClass(this.size)}`,
         `oc-button-justify-content-${this.justifyContent}`,
         `oc-button-gap-${getSizeClass(this.gapSize)}`,
-        `oc-button-${this.variation}`,
-        `oc-button-${this.appearance}`,
-        `oc-button-${this.variation}-${this.appearance}`
+        `oc-button-${this.colorRole ? `role-${kebabCase(this.colorRole)}` : this.variation}`,
+        `oc-button-${this.colorRole ? `role-${kebabCase(this.colorRole)}` : this.variation}-${
+          this.appearance
+        }`
       ]
     },
 
@@ -206,6 +232,62 @@ export default defineComponent({
 
 @mixin oc-button-line-height($factor) {
   line-height: $oc-size-icon-default * $factor;
+}
+
+@mixin oc-button-color-role($color, $on-color) {
+  &-raw,
+  &-raw-inverse {
+    border-style: none;
+    font-size: var(--oc-font-size-medium);
+    font-weight: normal;
+    min-height: 0;
+    padding: 0;
+
+    background-color: transparent;
+    color: $color;
+    .oc-icon > svg {
+      fill: $color;
+    }
+
+    &:focus:not([disabled]):not(button),
+    &:hover:not([disabled]):not(button) {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    &:focus:not([disabled]):not(.active):not(.no-hover),
+    &:hover:not([disabled]):not(.active):not(.no-hover) {
+      background-color: var(--oc-role-surface-container);
+      color: var(--oc-role-on-surface);
+      .oc-icon > svg {
+        fill: var(--oc-role-on-surface);
+      }
+    }
+  }
+  &-raw-inverse {
+    color: $on-color;
+    .oc-icon > svg {
+      fill: $on-color;
+    }
+  }
+
+  &-filled {
+    background-color: $color;
+    color: $on-color;
+    .oc-icon > svg {
+      fill: $on-color;
+    }
+  }
+
+  &-outline {
+    outline: 1px solid $color;
+    outline-offset: -1px;
+    background-color: transparent;
+    color: $color;
+    .oc-icon > svg {
+      fill: $color;
+    }
+  }
 }
 
 @mixin oc-button-variation($color, $hover-color, $muted-color, $contrast-color) {
@@ -388,6 +470,52 @@ export default defineComponent({
 
     font-size: var(--oc-font-size-xlarge);
     min-height: 2rem;
+  }
+
+  &-role-primary {
+    @include oc-button-color-role(var(--oc-role-primary), var(--oc-role-on-primary));
+  }
+  &-role-primary-container {
+    @include oc-button-color-role(
+      var(--oc-role-primary-container),
+      var(--oc-role-on-primary-container)
+    );
+  }
+  &-role-primary-fixed {
+    @include oc-button-color-role(var(--oc-role-primary-fixed), var(--oc-role-on-primary-fixed));
+  }
+  &-role-secondary {
+    @include oc-button-color-role(var(--oc-role-secondary), var(--oc-role-on-secondary));
+  }
+  &-role-secondary-container {
+    @include oc-button-color-role(
+      var(--oc-role-secondary-container),
+      var(--oc-role-on-secondary-container)
+    );
+  }
+  &-role-secondary-fixed {
+    @include oc-button-color-role(
+      var(--oc-role-secondary-fixed),
+      var(--oc-role-on-secondary-fixed)
+    );
+  }
+  &-role-tertiary {
+    @include oc-button-color-role(var(--oc-role-tertiary), var(--oc-role-on-tertiary));
+  }
+  &-role-tertiary-container {
+    @include oc-button-color-role(
+      var(--oc-role-tertiary-container),
+      var(--oc-role-on-tertiary-container)
+    );
+  }
+  &-role-tertiary-fixed {
+    @include oc-button-color-role(var(--oc-role-tertiary-fixed), var(--oc-role-on-tertiary-fixed));
+  }
+  &-role-surface {
+    @include oc-button-color-role(var(--oc-role-surface), var(--oc-role-on-surface));
+  }
+  &-role-surface-container {
+    @include oc-button-color-role(var(--oc-role-surface-container), var(--oc-role-on-surface));
   }
 
   &-passive {

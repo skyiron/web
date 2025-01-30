@@ -15,6 +15,7 @@
             v-for="(option, index) in locationOptions"
             :key="index"
             appearance="raw"
+            color-role="secondary"
             size="medium"
             justify-content="space-between"
             class="search-bar-filter-item oc-flex oc-flex-middle oc-width-1-1 oc-py-xs oc-px-s"
@@ -134,17 +135,6 @@ export default defineComponent({
   float: right;
   .oc-drop {
     width: 180px;
-  }
-}
-.search-bar-filter-item {
-  margin-top: var(--oc-space-xsmall);
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:hover:not(.oc-background-highlight):not(:disabled) {
-    background-color: var(--oc-color-background-hover) !important;
   }
 }
 </style>

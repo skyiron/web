@@ -28,6 +28,7 @@
                 }"
                 justify-content="space-between"
                 appearance="raw"
+                color-role="secondary"
                 :data-test-value="item[displayNameAttribute as keyof Item]"
                 @click="toggleItemSelection(item)"
               >
@@ -261,11 +262,6 @@ export default defineComponent({
     &-item {
       line-height: 1.5;
       gap: 8px;
-
-      &:hover,
-      &-active {
-        background-color: var(--oc-color-background-hover) !important;
-      }
     }
   }
 }

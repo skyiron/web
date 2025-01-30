@@ -84,7 +84,8 @@
               :id="`sidebar-panel-${panelSelect.name}-select`"
               :key="`panel-select-${panelSelect.name}`"
               :data-testid="`sidebar-panel-${panelSelect.name}-select`"
-              appearance="raw"
+              appearance="raw-inverse"
+              color-role="surface"
               @click="openPanel(panelSelect.name)"
             >
               <oc-icon :name="panelSelect.icon" :fill-type="panelSelect.iconFillType" />
@@ -291,7 +292,7 @@ export default defineComponent({
 
 <style lang="scss">
 #app-sidebar {
-  border-left: 1px solid var(--oc-color-border);
+  border-left: 1px solid var(--oc-role-outline-variant);
   position: relative;
   overflow: hidden;
   min-width: 440px;
@@ -323,13 +324,11 @@ export default defineComponent({
   max-height: 100%;
   display: grid;
   grid-template-rows: auto auto 1fr;
-  background-color: var(--oc-color-background-default);
+  background-color: var(--oc-role-surface);
   top: 0;
   position: absolute;
   transform: translateX(100%);
-  transition:
-    transform 0.4s ease,
-    visibility 0.4s 0s;
+  transition: transform 0.4s ease, visibility 0.4s 0s;
   // visibility is here to prevent focusing panel child elements,
   // the transition delay keeps care that it will only apply if the element is visible or not.
   // hidden: if element is off screen
@@ -361,7 +360,7 @@ export default defineComponent({
   }
 
   .multi-root-panel-separator {
-    border-top: 1px solid var(--oc-color-border);
+    border-top: 1px solid var(--oc-role-outline-variant);
   }
 
   &__header {
@@ -380,7 +379,7 @@ export default defineComponent({
 
       &__title {
         text-align: center;
-        color: var(--oc-color-text-default);
+        color: var(--oc-role-on-surface);
         font-size: var(--oc-font-size-large);
         grid-column-start: 2;
       }
@@ -407,10 +406,10 @@ export default defineComponent({
     margin: var(--oc-space-small) - var(--oc-space-small) - var(--oc-space-small);
 
     > button {
-      border-bottom: 1px solid var(--oc-color-border);
+      border-bottom: 1px solid var(--oc-role-outline-variant);
       width: 100%;
       border-radius: 0;
-      color: var(--oc-color-text-default) !important;
+      color: var(--oc-role-on-surface) !important;
       display: grid;
       grid-template-columns: auto 1fr auto;
       text-align: left;
@@ -418,7 +417,7 @@ export default defineComponent({
       padding: 0 var(--oc-space-small);
 
       &:first-of-type {
-        border-top: 1px solid var(--oc-color-border);
+        border-top: 1px solid var(--oc-role-outline-variant);
       }
 
       &:last-of-type {
@@ -427,11 +426,7 @@ export default defineComponent({
 
       &:hover,
       &:focus {
-        border-color: var(--oc-color-border) !important;
-      }
-
-      &:hover {
-        background-color: var(--oc-color-background-muted) !important;
+        border-color: var(--oc-role-outline-variant) !important;
       }
     }
   }

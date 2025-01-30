@@ -141,7 +141,7 @@ body {
 }
 
 #web {
-  background-color: var(--oc-color-background-chrome);
+  background-color: var(--oc-role-surface-container);
   height: 100vh;
   max-height: 100vh;
   overflow-y: hidden;

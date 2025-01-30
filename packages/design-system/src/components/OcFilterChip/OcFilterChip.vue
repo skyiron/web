@@ -134,9 +134,9 @@ export default defineComponent({
 .oc-filter-chip {
   &-button.oc-pill {
     align-items: center;
-    background-color: var(--oc-color-background-default) !important;
-    color: var(--oc-color-text-muted) !important;
-    border: 1px solid var(--oc-color-text-muted);
+    background-color: var(--oc-role-surface-container) !important;
+    color: var(--oc-role-on-surface-container) !important;
+    border: 1px solid var(--oc-role-outline);
     box-sizing: border-box;
     display: inline-flex;
     gap: var(--oc-space-xsmall);
@@ -149,7 +149,7 @@ export default defineComponent({
   }
   &-button-selected.oc-pill,
   &-button-selected.oc-pill:hover {
-    background-color: var(--oc-color-swatch-passive-default) !important;
+    background-color: var(--oc-role-secondary) !important;
     color: var(--oc-color-text-inverse) !important;
     border-top-left-radius: 99px !important;
     border-bottom-left-radius: 99px !important;
@@ -159,7 +159,7 @@ export default defineComponent({
   }
   &-clear,
   &-clear:hover {
-    background-color: var(--oc-color-swatch-passive-default) !important;
+    background-color: var(--oc-role-secondary) !important;
     color: var(--oc-color-text-inverse) !important;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
