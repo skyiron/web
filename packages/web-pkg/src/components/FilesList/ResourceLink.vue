@@ -1,8 +1,7 @@
 <template>
-  <component
-    :is="componentType"
-    v-bind="componentProps"
+  <oc-button
     v-if="isResourceClickable"
+    v-bind="componentProps"
     :target="linkTarget"
     :draggable="false"
     class="oc-resource-link"
@@ -10,7 +9,7 @@
     @click="emitClick"
   >
     <slot />
-  </component>
+  </oc-button>
   <span v-else>
     <slot />
   </span>
@@ -71,19 +70,24 @@ export default {
     isNavigatable() {
       return (this.resource.isFolder || this.link) && !this.resource.disabled
     },
-    componentType() {
-      return this.isNavigatable ? 'router-link' : 'oc-button'
-    },
     componentProps() {
+      const props = {
+        appearance: 'raw',
+        colorRole: 'secondary'
+      }
+
       if (!this.isNavigatable) {
         return {
-          appearance: 'raw',
+          ...props,
+          type: 'button',
           gapSize: 'none',
           justifyContent: 'left'
         }
       }
 
       return {
+        ...props,
+        type: 'router-link',
         to: this.link
       }
     }

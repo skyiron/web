@@ -97,6 +97,7 @@
           v-if="hasRenameAction(item)"
           class="resource-table-edit-name"
           appearance="raw"
+          color-role="secondary"
           @click="openRenameDialog(item)"
         >
           <oc-icon name="edit-2" fill-type="line" size="small" />
@@ -1275,10 +1276,6 @@ export default defineComponent({
   &-activity-indicator {
     display: inline-flex;
     margin-left: var(--oc-space-xsmall);
-
-    svg {
-      fill: var(--oc-color-text-muted);
-    }
   }
 
   &-people {

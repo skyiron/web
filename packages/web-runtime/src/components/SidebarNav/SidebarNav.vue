@@ -8,6 +8,7 @@
   >
     <oc-button
       appearance="raw"
+      color-role="secondary"
       :class="toggleSidebarButtonClass"
       class="toggle-sidebar-button oc-pb-s oc-pt-m"
       :aria-label="$gettext('Toggle sidebar')"

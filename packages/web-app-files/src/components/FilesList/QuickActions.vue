@@ -6,6 +6,7 @@
       v-oc-tooltip="action.label()"
       :aria-label="action.label()"
       appearance="raw"
+      color-role="secondary"
       class="oc-mr-xs quick-action-button oc-p-xs"
       :class="`files-quick-action-${action.name}`"
       @click="action.handler({ space, resources: [item] })"

@@ -11,6 +11,7 @@
             v-if="field.sortable"
             :aria-label="getSortLabel(field.name)"
             appearance="raw"
+            color-role="secondary"
             class="oc-button-sort oc-width-1-1"
             @click="handleSort(field)"
           >
@@ -511,7 +512,7 @@ export default defineComponent({
 .oc-table {
   border-collapse: collapse;
   border-spacing: 0;
-  color: var(--oc-color-text-default);
+  color: var(--oc-on-surface);
   width: 100%;
 
   &-hover tr {
@@ -562,7 +563,7 @@ export default defineComponent({
   &-thead-content {
     vertical-align: middle;
     display: inline-table;
-    color: var(--oc-color-swatch-passive-default);
+    color: var(--oc-role-secondary);
     &:hover {
       text-decoration: underline;
     }

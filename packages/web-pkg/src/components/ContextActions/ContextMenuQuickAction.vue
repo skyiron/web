@@ -4,6 +4,7 @@
     v-oc-tooltip="contextMenuLabel"
     :aria-label="contextMenuLabel"
     appearance="raw"
+    color-role="secondary"
     @click.stop.prevent="
       $emit('quickActionClicked', {
         event: $event,
